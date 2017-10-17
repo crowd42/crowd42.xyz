@@ -27,7 +27,7 @@ sur un livre pour les n00bs et c'est un pote sur IRC qui m'a alors recommandé
 `[What do you need to know about Docker`.
 
 <div style="text-align: center;">
-	<img src="{{ site.baseurl }}images/posts/2017/docker.jpg" style="width:40%;" />
+	<img src="{{ site.baseurl }}/images/posts/2017/docker.jpg" style="width:40%;" />
 </div>
 <br />
 

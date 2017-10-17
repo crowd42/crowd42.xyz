@@ -24,7 +24,7 @@ exploits disponibles pour cette version. La liste de ces vulnérabilités et
 exploits sont sauvegardés dans le fichier `vbscan/exploit/vbscandb.txt`.
 
 <div style="text-align: center;">
-	<img src="{{ site.baseurl }}images/posts/2017/vbscanpng.png" style="width:75%;" />
+	<img src="{{ site.baseurl }}/images/posts/2017/vbscanpng.png" style="width:75%;" />
 </div>
 <br />
 
@@ -35,7 +35,7 @@ des informations sensibles, genre un error_log, un fichier de backup ou de
 configuration, etc.
 
 <div style="text-align: center;">
-	<img src="{{ site.baseurl }}images/posts/2017/vbscan.png" style="width:75%;" />
+	<img src="{{ site.baseurl }}/images/posts/2017/vbscan.png" style="width:75%;" />
 </div>
 <br />
 

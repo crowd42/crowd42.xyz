@@ -17,7 +17,7 @@ of Wikileaks". Dans son nouveau documentaire, Alex Gibney s'intéresse de plus
 près à Stuxnet, le malware qui avait frappé les installations nucléaires
 iranienne fin années 2000.
 <div style="text-align: center;">
-	<img src="{{ site.baseurl }}images/posts/2017/stuxnet.png" style="width:70%;" />
+	<img src="{{ site.baseurl }}/images/posts/2017/stuxnet.png" style="width:70%;" />
 </div>
 <br />
 

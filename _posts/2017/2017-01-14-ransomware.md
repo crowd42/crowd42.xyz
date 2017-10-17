@@ -48,7 +48,7 @@ récupérer leurs données. Chez les parents de familles, 55% d'eux disent qu'il
 sont prêts à payer les pirates pour récupérer leurs photos.
 
 <div style="text-align: center;">
-	<img src="{{ site.baseurl }}images/posts/2017/ibm-ransomware.jpg" style="width:65%;" />
+	<img src="{{ site.baseurl }}/images/posts/2017/ibm-ransomware.jpg" style="width:65%;" />
 </div>
 <br />
 
