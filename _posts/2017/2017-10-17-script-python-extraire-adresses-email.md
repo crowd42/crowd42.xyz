@@ -17,6 +17,13 @@ Et comme tout "informaticien" qui se respecte, ma fainéantise n'a pas d'égal, 
 
 Le script connait quelques lacunes (et bugs) mais comme il faisait exactement ce que je lui ai demandé, je n'ai pas cherché à l'étoffer ou l'améliorer.
 
+Son utilisation est simple :
+~~~
+python email_extractor.py input_file output_file
+~~~
+
+Où "input_file" est le fichier source contenant les adresses emails et output_file est le fichier où seront sauvegardés les emails extrait du fichier.
+
 {% highlight python %}
 #!/usr/bin/env python
 # coding:utf-8
