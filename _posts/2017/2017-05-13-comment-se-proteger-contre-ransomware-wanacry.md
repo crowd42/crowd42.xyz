@@ -20,7 +20,7 @@ s'il y a plusieurs rumeurs/théories qui circulent sur le Web et Twitter
 particulièrement. Parmi elles, la très classique attaque phishing avec une pièce jointe, on parle aussi d'un ordinateur portable infecté qui s'est connecté un réseau pas très sécurisé d'un hôpital et de là le [ransomware \[1\]][1] s'est propagé.
 
 <div>
-	<img src="{{ site.baseurl }}/images/posts/2017/wcry.jpg" style="width:75%;" />
+	<img src="{{ site.baseurl }}images/posts/2017/wcry.jpg" style="width:75%;" />
 </div>
 <br />
 
