@@ -1,0 +1,25 @@
+---
+title: crowd42's blog
+bye_message: Propulsé fièrement par Jekyll!
+baseurl: "/"
+url: https://crowd42.github.io
+disqus: dubraise
+
+nick: crowd42
+mail:
+  domain: riseup
+  ext: net
+source_code:
+  server: github.com
+  nick: crowd42
+
+twitter:
+  twitter: twitter.com
+  nick: crowd42
+
+blog:
+  server: github.io
+  nick: crowd42
+fingerprint_key: 5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75
+markdown: kramdown
+permalink: "/:categories/:title/"
