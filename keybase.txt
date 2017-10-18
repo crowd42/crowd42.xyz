@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/crowd42
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://crowd42.github.io
+  * I am crowd42 (https://keybase.io/crowd42) on keybase.
+  * I have a public key with fingerprint 6894 53DC 909D A889 DCE8  D3CB 68B5 9233 104D D31E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01010006bed59b28495cfbc8f3592f73403da11b878689d2ff0b22cbc02abc31029d0a",
+            "fingerprint": "689453dc909da889dce8d3cb68b59233104dd31e",
+            "host": "keybase.io",
+            "key_id": "68b59233104dd31e",
+            "kid": "01010006bed59b28495cfbc8f3592f73403da11b878689d2ff0b22cbc02abc31029d0a",
+            "uid": "ff7dd5966d74159baf74d946f0582619",
+            "username": "crowd42"
+        },
+        "service": {
+            "hostname": "crowd42.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1494602808,
+    "expire_in": 157680000,
+    "prev": "9769a284799d81e3b5c32016662c6ca39e5ae2d7413b7a511db8bd1725b28727",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.70
+Comment: https://keybase.io/crypto
+
+yMIgAnicrZJbSBRRHMZ3y+tmYmoI4oNMUEibzX3mbD2EmViRbZmiJG1zLrM7Xma2
+3VlN1C5PlpCQQZJCQUUYRfmSCEJqilFKaBQZSUa+VPSgBAaZ1hmrh6DHmIfDnPN9
+v/P9P87o+rUuj/vovr09MZzrcY8Pd8dclRtfqE0MtHAj42tiasjqQmoxidqBGgMz
+Pobl6MeyMiRYApBXRSAhHSJVFyTA64ogsgLWOA6qiiqrAPO6zkKeRxCxvAaRwLE8
+wKzGeBndMIMkEo4Ypk2xVCtKAkaABVhTqRERFQsIyiqkXIH6RIwFjlBjyIo6DhoO
+alGSb1h0j/4EVuP9Q/+fc8dWcbquYAqSZayIHAVquiJiIMo6K6m8zAFHGCURU6sj
+VI0iVgMWeabFy9DNegMRp1dnkL8F+UHDDsXgr5nCEcu2kFVLj0O2HY76HLvdGHb0
+DQQGfpMC0DAx7ZI66kkkalgm4+OoEtmGg+ZEmorlVVb1MuRk2IiQgOEoJEVWaR+s
+cw+pp0igyECjvSgAYJUjApSQwLOcLMs8kpEmACJphHfGFaCiSRyHoQoxp/ASbVPh
+FcaZ7YRpMT5AY2pBiowaQVOzYxHCtDwaqopzuT2uhPg1zhtzeZLT/ry8KyWJS3HL
+1YltpXcWJwf0OrtHio3dP95zNr16Kruva92ZwqsXC3Zsfnaafds5iRcyUo9UFx9z
+f6x8lRSaL2gZzr7ZsfDVz//wjmrXx335w0Xu0OPpgQpz9nPq9sG08VMjL8sCT1ZK
+cqfT2tz7x2/1osUROS1rwt+5011RdW5r68O2L8nB50tVmd6cFNCaEgcvDbEgteRA
+CPvLisYuZBbeW86TfFNxeRvmDmb3jW4q3JX4NLej4HLX3bHMa7VKzuA3099cPn94
+W++NidJPt5sTP4yFFauoNEkoyJ/Z8i59j6uw/9Bs/Nzkm+zd38sfpJ/3tLckZBR3
+z5T2v/e/TkDtRSsTWT8BMrYy4A==
+=fyCf
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/crowd42
+
+==================================================================
