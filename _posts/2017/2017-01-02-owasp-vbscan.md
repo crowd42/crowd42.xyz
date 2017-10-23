@@ -1,67 +1,31 @@
 ---
 layout: post
-title:  "OWASP VBScan : un script pour auditer les forums VBulletin"
-date:   2017-01-02 11:15:00
+title:  "Petite astuce pour ne plus saisir mot de passe git"
+date:   2017-10-23 11:15:00
 categories:
     - blog
 tags:
-    - penetration testing
-    - test d'intrusion
-    - owasp vbscan
-    - vbulletin
+    - git
+    - github
+    - astuce
 ---
 
-VBulletin est un CMS pour forum assez populaire bien qu'il soit [propriétaire
-[\0\]][0] et surtout pour ses nombreuses failles de sécurité : SQLI, code exec, XSS, remote file
-inclusion et j'en passe. [OWASP VBScan \[0\]][0] est un outil écrit en perl qui vous permettra
-d'automatiser l'audit des forums VBulletin et de découvrir s'ils sont
-vulnérables ou pas.
+Un petit billet pour partager une astuce et qui est surement connu de la quasi majorité des personnes
+qui utilisent Git, mais je tiens à la partager quand même parce qu'on sait jamais, qui sait, 
+    peut être qu'un newbie (rien de péjoratif) va tomber dessus et pour me remercier, il va prier que je gagne le loto !
 
-#### Comment ça fonctionne
+Alors oui l'astuce. Donc quand vous cloner/initialiser un dépôt Git, à chaque fois que vous faites un "push",
+      git vous demande de saisir votre nom d'utilisateur et mot de passe. Ça peut vite devenir pénible si vous
+      êtes amenés à le faire plusieurs fois par heure/jour.
 
-OWASP VBScan détecte la version de VBulletin utilisé par votre cible puis va lister toutes les vulnérabilités et
-exploits disponibles pour cette version. La liste de ces vulnérabilités et
-exploits sont sauvegardés dans le fichier `vbscan/exploit/vbscandb.txt`.
-
-<div style="text-align: center;">
-	<img src="{{ site.baseurl }}/images/posts/2017/vbscanpng.png" style="width:75%;" />
-</div>
-<br />
-
-
-Ensuite, VBScan va exécuter un ensemble de scripts pour vérifier si des modules
-sont à leurs tour vulénrables ou pas et s'il y a des fichiers qui peuvent leaker
-des informations sensibles, genre un error_log, un fichier de backup ou de
-configuration, etc.
-
-<div style="text-align: center;">
-	<img src="{{ site.baseurl }}/images/posts/2017/vbscan.png" style="width:75%;" />
-</div>
-<br />
-
-Enfin, quand OWASP VBScan aura terminé son scan, il sauvegardera les résultats
-dans un rapport sous deux formats, HTML et texte que vous pouvez trouver dans le
-répertoire `reports`
-
-#### Installer OWASP VBScan
-Pour installer OWASP VBScan, il suffit de cloner le répertoire GIT du projet en
-exécutant cette commande :
-
+Pour t'éviter de petit calvaire toi petit noob, il te suffit d'exécuter ces deux lignes de commande :
 ~~~
-$ git clone https://github.com/rezasp/vbscan
-$ cd vbscan && chmod +x vbscan.pl
+$ git config --global credential.helper cache
 ~~~
 
-Et pour le lancer :
+Par défaut Git va se rappeler de votre pseudo/mot de passe pendant 15 minutes, vous pouvez modifier ce comportement avec cette commande :
 ~~~
-$ ./vbscan votre_cible
-$ ./vbscan example.com/forum
+git config --global credential.helper 'cache --timeout=3600'
 ~~~
-<iframe width="560" height="315" src="https://youtu.be/SirozqDYERA" frameborder="0" allowfullscreen></iframe>
 
-### Liens
-~~~
-[0]: https://www.owasp.org/index.php/OWASP_VBScan_Project
-~~~
-[0]: https://www.owasp.org/index.php/OWASP_VBScan_Project
-
+Voilà voilou :p
