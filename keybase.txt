@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/crowd42
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://crowd42.github.io
+  * I am crowd42 (https://keybase.io/crowd42) on keybase.
+  * I have a public key ASCD973eKc0EVJYMI_flbc8NmfiTj8z2aBisZ_Od7by9Cwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012083f7bdde29cd0454960c23f7e56dcf0d99f8938fccf66818ac67f39dedbcbd0b0a",
+      "host": "keybase.io",
+      "kid": "012083f7bdde29cd0454960c23f7e56dcf0d99f8938fccf66818ac67f39dedbcbd0b0a",
+      "uid": "ff7dd5966d74159baf74d946f0582619",
+      "username": "crowd42"
+    },
+    "merkle_root": {
+      "ctime": 1509006740,
+      "hash": "962ca57426ebf582cfa0ec6cdeab18cd2e1ff1a3aadec4ce3f789543ace722b5f25bed254b3f3a752f985f11c3b5569c6b2f93a9a08a27c7143d08f7cb2a8a89",
+      "hash_meta": "6d51d7826b142507ec31bf0b199fefbc59a3a8e9b81ad269380b9cbd1dfd2baa",
+      "seqno": 1631772
+    },
+    "service": {
+      "hostname": "crowd42.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.34"
+  },
+  "ctime": 1509006757,
+  "expire_in": 504576000,
+  "prev": "7d66b021e4323b2aba8606bc434bbe5956db8f5e34c6ffd060ce144f956998e9",
+  "seqno": 45,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgg/e93inNBFSWDCP35W3PDZn4k4/M9mgYrGfzne28vQsKp3BheWxvYWTFA0l7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwODNmN2JkZGUyOWNkMDQ1NDk2MGMyM2Y3ZTU2ZGNmMGQ5OWY4OTM4ZmNjZjY2ODE4YWM2N2YzOWRlZGJjYmQwYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODNmN2JkZGUyOWNkMDQ1NDk2MGMyM2Y3ZTU2ZGNmMGQ5OWY4OTM4ZmNjZjY2ODE4YWM2N2YzOWRlZGJjYmQwYjBhIiwidWlkIjoiZmY3ZGQ1OTY2ZDc0MTU5YmFmNzRkOTQ2ZjA1ODI2MTkiLCJ1c2VybmFtZSI6ImNyb3dkNDIifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MDkwMDY3NDAsImhhc2giOiI5NjJjYTU3NDI2ZWJmNTgyY2ZhMGVjNmNkZWFiMThjZDJlMWZmMWEzYWFkZWM0Y2UzZjc4OTU0M2FjZTcyMmI1ZjI1YmVkMjU0YjNmM2E3NTJmOTg1ZjExYzNiNTU2OWM2YjJmOTNhOWEwOGEyN2M3MTQzZDA4ZjdjYjJhOGE4OSIsImhhc2hfbWV0YSI6IjZkNTFkNzgyNmIxNDI1MDdlYzMxYmYwYjE5OWZlZmJjNTlhM2E4ZTliODFhZDI2OTM4MGI5Y2JkMWRmZDJiYWEiLCJzZXFubyI6MTYzMTc3Mn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJjcm93ZDQyLmdpdGh1Yi5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM0In0sImN0aW1lIjoxNTA5MDA2NzU3LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjdkNjZiMDIxZTQzMjNiMmFiYTg2MDZiYzQzNGJiZTU5NTZkYjhmNWUzNGM2ZmZkMDYwY2UxNDRmOTU2OTk4ZTkiLCJzZXFubyI6NDUsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA+OySXeQh3Wuf837D+26vfto3yRt29zs41D96gptprpRmNJeKk4cACtKT/nwyFR+yxIdRjOdJFXnz9pd3hzqTBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILP7A1NqnBeGOe904A2Wj/YBwbFmszkkTicMQEgGOdq7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/crowd42
+
+==================================================================
