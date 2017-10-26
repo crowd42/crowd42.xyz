@@ -6,50 +6,46 @@ I hereby claim:
 
   * I am an admin of https://crowd42.github.io
   * I am crowd42 (https://keybase.io/crowd42) on keybase.
-  * I have a public key ASCD973eKc0EVJYMI_flbc8NmfiTj8z2aBisZ_Od7by9Cwo
+  * I have a public key with fingerprint 6894 53DC 909D A889 DCE8  D3CB 68B5 9233 104D D31E
 
 To do so, I am signing this object:
 
 {
-  "body": {
-    "key": {
-      "eldest_kid": "012083f7bdde29cd0454960c23f7e56dcf0d99f8938fccf66818ac67f39dedbcbd0b0a",
-      "host": "keybase.io",
-      "kid": "012083f7bdde29cd0454960c23f7e56dcf0d99f8938fccf66818ac67f39dedbcbd0b0a",
-      "uid": "ff7dd5966d74159baf74d946f0582619",
-      "username": "crowd42"
+    "body": {
+        "key": {
+            "eldest_kid": "01010006bed59b28495cfbc8f3592f73403da11b878689d2ff0b22cbc02abc31029d0a",
+            "fingerprint": "689453dc909da889dce8d3cb68b59233104dd31e",
+            "host": "keybase.io",
+            "key_id": "68b59233104dd31e",
+            "kid": "01010006bed59b28495cfbc8f3592f73403da11b878689d2ff0b22cbc02abc31029d0a",
+            "uid": "ff7dd5966d74159baf74d946f0582619",
+            "username": "crowd42"
+        },
+        "service": {
+            "hostname": "crowd42.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
     },
-    "merkle_root": {
-      "ctime": 1508984906,
-      "hash": "0117d19fd9db05c6819115ba8716aa6ae01b95544ae7ef6a715f7b4e749784cf9498859449a88b65880fb903dfcdec8e556611780180a10629c680bd18a175db",
-      "hash_meta": "908c03d2a835f9914f006bf139b13bb6e1d7920753f004f3090935dc1558826c",
-      "seqno": 1630838
-    },
-    "service": {
-      "hostname": "crowd42.github.io",
-      "protocol": "https:"
-    },
-    "type": "web_service_binding",
-    "version": 1
-  },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "1.0.34"
-  },
-  "ctime": 1508984934,
-  "expire_in": 504576000,
-  "prev": "85be01c97370952cea173e1aa6a7ec8473dd08b4311aeddd41bebb35439e9898",
-  "seqno": 40,
-  "tag": "signature"
+    "ctime": 1494602808,
+    "expire_in": 157680000,
+    "prev": "9769a284799d81e3b5c32016662c6ca39e5ae2d7413b7a511db8bd1725b28727",
+    "seqno": 9,
+    "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgg/e93inNBFSWDCP35W3PDZn4k4/M9mgYrGfzne28vQsKp3BheWxvYWTFA0l7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwODNmN2JkZGUyOWNkMDQ1NDk2MGMyM2Y3ZTU2ZGNmMGQ5OWY4OTM4ZmNjZjY2ODE4YWM2N2YzOWRlZGJjYmQwYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODNmN2JkZGUyOWNkMDQ1NDk2MGMyM2Y3ZTU2ZGNmMGQ5OWY4OTM4ZmNjZjY2ODE4YWM2N2YzOWRlZGJjYmQwYjBhIiwidWlkIjoiZmY3ZGQ1OTY2ZDc0MTU5YmFmNzRkOTQ2ZjA1ODI2MTkiLCJ1c2VybmFtZSI6ImNyb3dkNDIifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MDg5ODQ5MDYsImhhc2giOiIwMTE3ZDE5ZmQ5ZGIwNWM2ODE5MTE1YmE4NzE2YWE2YWUwMWI5NTU0NGFlN2VmNmE3MTVmN2I0ZTc0OTc4NGNmOTQ5ODg1OTQ0OWE4OGI2NTg4MGZiOTAzZGZjZGVjOGU1NTY2MTE3ODAxODBhMTA2MjljNjgwYmQxOGExNzVkYiIsImhhc2hfbWV0YSI6IjkwOGMwM2QyYTgzNWY5OTE0ZjAwNmJmMTM5YjEzYmI2ZTFkNzkyMDc1M2YwMDRmMzA5MDkzNWRjMTU1ODgyNmMiLCJzZXFubyI6MTYzMDgzOH0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJjcm93ZDQyLmdpdGh1Yi5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM0In0sImN0aW1lIjoxNTA4OTg0OTM0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6Ijg1YmUwMWM5NzM3MDk1MmNlYTE3M2UxYWE2YTdlYzg0NzNkZDA4YjQzMTFhZWRkZDQxYmViYjM1NDM5ZTk4OTgiLCJzZXFubyI6NDAsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA9ml2faQF7H82RpeyVpRUKfP0YWvhHP+ncU9Dw3YhLnjtZIHK0hNtwGisIn3vGGzuw02I2zaBBBKXkkLeDSEwCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFfE3fPN4z43SsbA+uKbNUtJrfw7iwzF0aYvXebG108uo3RhZ80CAqd2ZXJzaW9uAQ==
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.70
+Comment: https://keybase.io/crypto
 
-And finally, I am proving ownership of this host by posting or
-appending to this document.
+yMIgAnicrZJbSBRRHMZ3y+tmYmoI4oNMUEibzX3mbD2EmViRbZmiJG1zLrM7Xma2
+3VlN1C5PlpCQQZJCQUUYRfmSCEJqilFKaBQZSUa+VPSgBAaZ1hmrh6DHmIfDnPN9
+v/P9P87o+rUuj/vovr09MZzrcY8Pd8dclRtfqE0MtHAj42tiasjqQmoxidqBGgMz
+Pobl6MeyMiRYApBXRSAhHSJVFyTA64ogsgLWOA6qiiqrAPO6zkKeRxCxvAaRwLE8
+wKzGeBndMIMkEo4Ypk2xVCtKAkaABVhTqRERFQsIyiqkXIH6RIwFjlBjyIo6DhoO
+alGSb1h0j/4EVuP9Q/+fc8dWcbquYAqSZayIHAVquiJiIMo6K6m8zAFHGCURU6sj
+VI0iVgMWeabFy9DNegMRp1dnkL8F+UHDDsXgr5nCEcu2kFVLj0O2HY76HLvdGHb0
 
-View my publicly-auditable identity here: https://keybase.io/crowd42
-
-==================================================================
