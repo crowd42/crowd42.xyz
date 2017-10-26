@@ -23,7 +23,7 @@ permalink: /category/
 
 {% assign taglist = site.tags | sort %}
 {% for category in taglist %} 
- <h2 id="{{ category[0] }}">{{ category[0] }}</h2>
+ <h2 id="/{{ category[0] }}">{{ category[0] }}</h2>
  <ul class="post-list">
   {% assign list = category[1] %}  
   {% for post in list %}
