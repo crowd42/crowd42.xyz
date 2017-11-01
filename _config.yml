@@ -12,6 +12,14 @@ source_code:
   server: github.com
   nick: crowd42
 
+keybase:
+  keybase: keybase.io
+  nick: crowd42
+
+mastodon:
+  mastodon: mastodon.social
+  nick: crowd42
+
 twitter:
   twitter: twitter.com
   nick: crowd42
