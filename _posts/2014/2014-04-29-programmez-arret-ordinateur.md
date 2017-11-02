@@ -4,6 +4,7 @@ title:  "Astuce : programmez l'arrêt de votre ordinateur"
 date:   2014-04-28 21:15:00
 categories:
     - blog
+    - astuce
 tags:
     - astuce
     - linux

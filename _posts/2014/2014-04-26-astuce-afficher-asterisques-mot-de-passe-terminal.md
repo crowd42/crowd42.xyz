@@ -4,6 +4,7 @@ title:  "Astuce afficher les astérisques quand vous saisissez un mot de passe d
 date:   2014-04-26 21:15:00
 categories:
     - blog
+    -astuce
 tags:
     - astuce
     - blog
