@@ -3,7 +3,7 @@ layout: post
 title:  "Privacy BADGER, la nouvelle extension développée par l’EFF"
 date:   2014-05-06 21:15:00
 categories:
-    - post
+    - blog
 tags:
     - vie privée
     - eff

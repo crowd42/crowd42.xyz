@@ -3,7 +3,7 @@ layout: post
 title:  "Retrouver les adresses emails que vous cherchez avec TheHarvester"
 date:   2014-05-13 21:15:00
 categories:
-    - post
+    - blog
 tags:
     - reconnaissance
     - infosec
