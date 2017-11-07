@@ -1,0 +1,37 @@
+---
+layout: blog
+title: "Blog Posts"
+# permalink: /blog/
+---
+
+<ul class="posts">
+    {% for post in paginator.posts %}
+        <li>
+            <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+            ::
+            <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+            @ {
+            {% assign tag = post.tags | sort %}
+            {% for category in tag %}<span><a href="{{ site.baseurl }}/category/#{{ category }}" class="reserved">{{ category }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
+            {% assign tag = nil %}
+            }
+        </li>
+    {% endfor %}
+</ul>
+
+<!-- Pagination links -->
+<div class="col-lg-8 col-lg-offset-2">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Page précédente</span>
+  {% endif %}
+
+  <span class="page_number ">Page: {{ paginator.page }} sur {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Page suivante</a>
+  {% else %}
+    <span class="next ">Page suivante</span>
+  {% endif %}
+</div>
+
