@@ -24,10 +24,10 @@ layout: page
         {% for thisTag in page.tags %}
             {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                 {% if hasSimilar.size == 0 %}
-                <h4>Sur le même sujet</h4>
+                <h1>Sur le même sujet</h1>
                 <ul>
                 {% endif %}
-                <li class="post-header">
+                <li>
                     <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
                     {% if post.series %}
                         (Series: {{ post.series }})
