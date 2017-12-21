@@ -1,2 +1,9 @@
-_site
-*.swp
+__pycache__
+.ropeproject
+.swp
+*.pyc
+*.db
+*.ini
+*.txt
+*.bck
+*.db
