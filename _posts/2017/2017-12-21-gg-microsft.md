@@ -33,7 +33,7 @@ I assume this is some bundling deal with Microsoft. I've heard of Keeper, I reme
 Il a de même partagé un proof of concept où l'on voit qu'il a réussi à choper le mot de passe Twitter.
 
 <div>
-	<img src="{{ site.baseurl }}/images/posts/2017/windows_keeper.png style="width:75%;" />
+	<img src="{{ site.baseurl }}/images/posts/2017/windows_keeper.png" style="width:75%;/>
 </div>
 <br />
 
