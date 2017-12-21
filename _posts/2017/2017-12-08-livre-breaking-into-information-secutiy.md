@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Livre : Breaking into information security: learning the ropes 101
+title: "Livre : Breaking into information security: learning the ropes 101"
 date: 2017-12-08 11:08:00
 categories:
     - books
