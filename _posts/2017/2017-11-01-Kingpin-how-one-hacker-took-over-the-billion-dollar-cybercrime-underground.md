@@ -5,7 +5,7 @@ date:   2017-11-01 08:01:00
 categories:
     - books
 tags:
-    - livres
+    - livre
     - biographie
     - hacker
     - cybercrime
