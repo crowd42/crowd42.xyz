@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Trucs & astuces
+layout: blog
+title: "Trucs & astuces"
 permalink: /astuces/
 ---
 
