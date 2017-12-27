@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Trucs & astuces"
-#permalink: /astuces/
+title: Trucs & astuces
+permalink: /astuces/
 ---
 
 
