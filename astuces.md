@@ -6,7 +6,7 @@ permalink: /astuces/
 
 
 <ul class="posts">
-    {% for post in site.categories.astuce %}
+    {% for post in site.categories.astuces %}
         <li>
             <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
         </li>
