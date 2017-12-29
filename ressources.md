@@ -14,6 +14,7 @@ permalink: /ressources/
 * [A collection of cheatsheet, tools, exploits, etc for pentesters](https://github.com/crowd42/Pentest)
 * [Penetration testing cheatsheet](https://github.com/crowd42/Cheatsheets)
 * [Public version of PagerDuty's Incident Response Documentation](https://github.com/PagerDuty/incident-response-docs)
+* [Plusiuers cheatsheets](https://github.com/crowd42/Cheatsheets)
 
 # Python
 
