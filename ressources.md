@@ -19,4 +19,4 @@ permalink: /ressources/
 # Python
 
 * [Awesome Python: A curated list of awesome Python frameworks, libraries, software and resources ](http://awesome-python.com)
-
+* [Apprendre python : Meilleurs tutoriaux vidéos que j'ai trouvé sur le web !](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
