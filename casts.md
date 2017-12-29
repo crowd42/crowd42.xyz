@@ -6,6 +6,7 @@ permalink: /casts/
 
 # PodCasts
 
+* [Talk Python to me](https://talkpython.fm/)
 * [Paul's Security Weekly](http://securityweekly.com/)
 * [Trustedsec](http://www.trustedsec.com/podcasts)
 * [Defensive Security Podcast](https://www.defensivesecurity.org)
