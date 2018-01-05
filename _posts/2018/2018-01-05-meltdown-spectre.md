@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deux points à propos de meltdown et spectre"
+title: "Deux points qui me tracassent à propos de meltdown et spectre"
 date: 2018-01-05 00:01:00
 categories:
     - blog
