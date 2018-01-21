@@ -16,7 +16,7 @@ Je ne sais pas si vous vous souvenez de ça, mais jusqu'à il y a quelques anné
 En effet, il y a quelques jours, j'ai voulu créer un compte sur le site des services "cloud" de Microsoft, j'ai ouvert donc KeePass et j'ai créé une nouvelle entrée pour Azure, j'ai ensuite copier le mot de passe que j'ai généré et je l'ai collé dans le champ qui est lui réservé dans le formulaire d'inscription et là surprise :
 
 <div>
-	<img src="{{ site.baseurl }}/images/posts/2018/inscription-microsoft.png" style="width:55%;" />
+	<img src="{{ site.baseurl }}/images/posts/2018/inscription-microsoft.png" style="width:75%;" />
 </div>
 <br />
 
