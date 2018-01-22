@@ -22,7 +22,7 @@ En effet, il y a quelques jours, j'ai voulu créer un compte sur le site des ser
 
 Oui vous avez bien lu/vu, en 2018 il y a encore une grande entreprise  comme Microsoft qui interdit l'usage des caractères spéciaux dans les mots de passe...
 
-Donc c'est par miracle quelqu'un de chez Microsoft passe par ici, voilà un petit rappel des règles qu'il faut choisir quand on veut créer un bon mot de passe :
+Donc si par miracle quelqu'un de chez Microsoft passe par ici, voilà un petit rappel des règles qu'il faut choisir quand on veut créer un bon mot de passe :
 
 * Choisir des mots de passe difficiles à deviner ;
 * Toujours utiliser des combinaisons des lettres minuscules et majuscules, des chiffres et des caractères spéciaux ;
