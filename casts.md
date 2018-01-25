@@ -5,8 +5,7 @@ permalink: /casts/
 ---
 
 # PodCasts
-
-* [Talk Python to me](https://talkpython.fm/)
+## Infosec
 * [Paul's Security Weekly](http://securityweekly.com/)
 * [Trustedsec](http://www.trustedsec.com/podcasts)
 * [Defensive Security Podcast](https://www.defensivesecurity.org)
@@ -23,6 +22,14 @@ permalink: /casts/
 * [Threatpost](https://threatpost.com/category/podcasts/feed/)
 * [Rally Security](http://rallysecurity.com)
 * [Primal Security](http://www.primalsecurity.net/podcasts)
+
+## Python
+* [Talk Python to me](https://talkpython.fm/)
+* [Podcast.__init__](https://www.podcastinit.com/)
+* [Python Bytes](https://pythonbytes.fm/)
+* [The Python Experience](http://python.madewithopinion.com/)
+* [Import This: A Python Podcast for Humans](https://www.kennethreitz.org/import-this/)
+* [Test & Code](http://pythontesting.net/podcast)
 
 # WebCasts
 
