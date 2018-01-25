@@ -5,7 +5,7 @@ permalink: /casts/
 ---
 
 # PodCasts
-## Infosec
+### Infosec
 * [Paul's Security Weekly](http://securityweekly.com/)
 * [Trustedsec](http://www.trustedsec.com/podcasts)
 * [Defensive Security Podcast](https://www.defensivesecurity.org)
@@ -23,7 +23,7 @@ permalink: /casts/
 * [Rally Security](http://rallysecurity.com)
 * [Primal Security](http://www.primalsecurity.net/podcasts)
 
-## Python
+### Python
 * [Talk Python to me](https://talkpython.fm/)
 * [Podcast.__init__](https://www.podcastinit.com/)
 * [Python Bytes](https://pythonbytes.fm/)
