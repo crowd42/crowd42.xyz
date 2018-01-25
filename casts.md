@@ -22,6 +22,8 @@ permalink: /casts/
 * [Threatpost](https://threatpost.com/category/podcasts/feed/)
 * [Rally Security](http://rallysecurity.com)
 * [Primal Security](http://www.primalsecurity.net/podcasts)
+* [The Security Ledger](http://feeds.feedblitz.com/securityledgerpodcasts)
+* [O'Reily Security Podcast](https://feeds.podtrac.com/5xZaPOpMqOrn)
 
 ### Python
 * [Talk Python to me](https://talkpython.fm/)
