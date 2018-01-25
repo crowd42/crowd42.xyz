@@ -6,9 +6,9 @@ permalink: /casts/
 
 # PodCasts
 ### Infosec
-* [Paul's Security Weekly](http://securityweekly.com/)
-* [Trustedsec](http://www.trustedsec.com/podcasts)
 * [Defensive Security Podcast](https://www.defensivesecurity.org)
+* [Paul's Security Weekly](http://securityweekly.com/)
+* [Trustedsec](https://www.trustedsec.com/category/trustedsec-security-podcast/)
 * [Brakeing Down Security podcast](http://www.brakeingsecurity.com)
 * [CERT's Podcast](http://www.cert.org/podcasts)
 * [Cisco TAC  Podcast](http://www.cisco.com/en/US/solutions/ns170/tac/security_tac_podcasts.html)
