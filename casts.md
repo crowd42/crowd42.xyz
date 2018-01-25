@@ -27,7 +27,7 @@ permalink: /casts/
 * [Talk Python to me](https://talkpython.fm/)
 * [Podcast.__init__](https://www.podcastinit.com/)
 * [Python Bytes](https://pythonbytes.fm/)
-* [The Python Experience](http://python.madewithopinion.com/)
+* [The Python Experience](http://www.digitalpodcast.com/feeds/70345-the-python-experience)
 * [Import This: A Python Podcast for Humans](https://www.kennethreitz.org/import-this/)
 * [Test & Code](http://pythontesting.net/podcast)
 
