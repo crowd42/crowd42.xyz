@@ -7,6 +7,7 @@ permalink: /ressources/
 # Infosec 
 
 * [The penetration testers framework](https://github.com/trustedsec/ptf)
+* [FREE ONLINE CYBER SECURITY COURSES (MOOCS)](https://www.cyberdegrees.org/resources/free-online-courses/)
 * [Getting started in infosec](https://github.com/gradiuscypher/infosec_getting_started)
 * [Phishing catcher](https://github.com/x0rz/phishing_catcher)
 * [Exploit Pack -The next generation exploit framework](https://github.com/juansacco/exploitpack)
