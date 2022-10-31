@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Full Disclosure : Des emails et mots de passe de la compagnie aérienne Etihad Airways dans l'air | crowd42's blog</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="feed/"> 
+
+</head>
+
+
+    <body>
+      <div class="container">
+
+        <header class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1 class="">crowd42's blog</h1>
+    <p>
+    <span class="reserved">char</span> nick[<span class="number">7</span>] = <span class="string">"crowd42"</span>;
+    </p>
+    <p>
+    printf(<a href="https://github.com/crowd42" target="_blank"><span class="string">"https://github.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://mastodon.social/crowd42"
+      target="_blank"><span class="string">"https://mastodon.social/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://keybase.io/crowd42"
+      target="_blank"><span class="string">"https://keybase.io/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+
+     <p>
+    printf(<a href="https://twitter.com/crowd42"
+      target="_blank"><span class="string">"https://twitter.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<span class="string">"<span class="reserved">%s\x40</span>riseup<span class="reserved">\x2e\\\b</span>net<span class="reserved">\n</span>"</span>,nick);
+    </p>
+    <!-- <p>
+            printf(<a href="https://crowd42.github.io" target="_blank"><span class="string">"https://<span class="reserved">%s</span>.github.io<span class="reserved">\n</span>"</span></a>,nick);
+        </p> -->
+    <p>
+    puts(<a href="misc/pubkey.gpg.txt" target="_blank"><span
+        class="string">"0xdc 5a6d b445 976d 60"</span></a>);
+    </p>
+  </div>
+</header>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="menu">
+      <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/blog/">blog</a></li>
+          <li> <a href="/astuces/">astuces</a></li>
+          <li><a href="/books/">books</a></li>
+          <li><a href="/casts">*casts</a></li>
+          <li><a href="/movies">movies</a></li>
+          <li><a href="/talks">talks</a></li>
+          <li><a href="/zines">*zines</a></li>
+          <li><a href="/ressources">ressources</a></li>
+          <li><a href="/feed">feed</a></li>
+          <li><a href="https://liberapay.com/~29921/donate">donate</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <main>
+            <div class="post">
+
+  <header class="post-header">
+    <h1>Full Disclosure : Des emails et mots de passe de la compagnie aérienne Etihad Airways dans l'air</h1>
+  </header>
+
+  <article class="post-content">
+  <div class="post">
+
+  <header class="post-header">
+    <p class="meta">
+        Dec 28, 2017
+        
+        
+        •
+        <span><a href="/category/#infosec" class="reserved">infosec</a>,</span><span><a href="/category/#brèche" class="reserved">brèche</a>,</span><span><a href="/category/#leak" class="reserved">leak</a>,</span><span><a href="/category/#etihad" class="reserved">etihad</a>,</span><span><a href="/category/#HackerOne" class="reserved">HackerOne</a>,</span><span><a href="/category/#coup de gueule" class="reserved">coup de gueule</a>,</span><span><a href="/category/#ful-disclosure" class="reserved">ful-disclosure</a></span>
+    </p>
+  </header>
+
+  <article class="post-content">
+  <p>Il y a près de deux mois, je discutais avec <a href="https://soc.ialis.me/@href">@href [0]</a> un sujet dont je me rappelle plus les détails (désolé, on va mettre ça sur le dos de la vieillesse et la mémoire qui commence à flancher), tout ce dont je me rappelle c’est que ça parlait d’emailing et de <a href="https://fr.wikipedia.org/wiki/Web_scraping">web scraping [1]</a> (ou pas, je ne me rappelle vraiment pas). Parce que juste après je me suis lancé dans l’écriture d’un script python (tout pourri je dois avouer) qui prenait comme argument un <a href="https://fr.wikipedia.org/wiki/Google_hacking">Google dork [2]</a> :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python email_harvester.py -d "site:.com +@ gmail.com|yahoo.com"
+</code></pre></div></div>
+
+<p>Le but était de voir combien d’adresse email je pouvais collecter en une heure. Le script n’avait rien de spécial, il cherchait des fichiers sur le web qui contenaient des adresses email et les sauvegarder dans un répertoire. Le script affichait aussi les liens en cours de traitement. Sauf qu’à la première exécution du script, j’ai remarqué un nom de domaine qui m’a obligé à arrêter le programme : <a href="http://etihadmediacentre.com">etihadmediacentre.com</a>. Pour ceux qui ne le savent Etihad est une compagnie aérienne émaratie, elle est dans le top 3 des plus grandes/meilleures compagnies aériennes au monde. Pourquoi j’ai arrêté le script ? Le petit bout de code va vous donner élément de réponse :</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Filter-out unrelated links and extract actual URL from Google's.
+</span>        <span class="k">if</span> <span class="n">i</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">).</span><span class="n">startswith</span><span class="p">(</span><span class="s">'/url?'</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">i</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">).</span><span class="n">startswith</span><span class="p">(</span>
+                <span class="s">"/url?q=http://webcache.googleusercontent.com"</span><span class="p">):</span>
+            <span class="n">extract</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s">"q=(.*\.sql)"</span><span class="p">,</span> <span class="n">i</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">extract</span><span class="p">:</span>
+                <span class="n">get_emails</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+                <span class="k">print</span><span class="p">(</span><span class="n">link</span><span class="p">)</span></code></pre></figure>
+
+<p>Vous l’avez remarquer le “*.sql” ? Ce bout bout du script va s’assurer de ne traiter que les liens avec l’extension .sql (des dumps sql) et le lien que j’ai vu dans mon terminal était un dump d’Etihad !</p>
+
+<p>J’ai ouvert le site web dans mon navigateur et fait un whois du nom de domaine pour m’assurer que c’était bien un site web appartenant un à la compagnie aérienne Etihad Airways et non pas site web appartenant à des phishers comme je l’ai pensé pendant un petit moment de doute. Mon action suivante était d’aller vers la page qui contenait le dump sql :</p>
+<div>
+    <img src="/images/posts/2017/etihad_sql.png" style="width:75%" />
+</div>
+<p><br /></p>
+
+<p>Si vous aviez bien regardé l’image, vous devriez avoir remarqué deux choses :</p>
+<ol>
+  <li>L’archive a été mis en ligne le 24 juillet 2017, il est donc très récent et les informations qu’il doit contenir sont probablement à leur tour très récentes ;</li>
+  <li>La taille du dump est assez conséquente, plus de 600Mo quand même.</li>
+</ol>
+
+<p>J’ai téléchargé le dump sql ainsi que l’archive tar, légalement parlant ce n’est pas répréhensible, tout ce que j’ai fait c’est d’accéder à des fichiers disponible publiquement (même si le juge de l’affaire bluetouff pense différemment). Ensuite j’ai exporté le dump sql vers un serveur mysql pour les examiner.</p>
+
+<p>Deux tables ont attiré mon attentions : root_users et users, j’ouvre la première je copie un hash d’un mot de passe pour l’identifier avec <a href="https://fr.wikipedia.org/wiki/Google_hacking">hash-identifier [2]</a> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   #########################################################################
+   #     __  __                     __           ______    _____           #
+   #    /\ \/\ \                   /\ \         /\__  _\  /\  _ `\         #
+   #    \ \ \_\ \     __      ____ \ \ \___     \/_/\ \/  \ \ \/\ \        #
+   #     \ \  _  \  /'__`\   / ,__\ \ \  _ `\      \ \ \   \ \ \ \ \       #
+   #      \ \ \ \ \/\ \_\ \_/\__, `\ \ \ \ \ \      \_\ \__ \ \ \_\ \      #
+   #       \ \_\ \_\ \___ \_\/\____/  \ \_\ \_\     /\_____\ \ \____/      #
+   #        \/_/\/_/\/__/\/_/\/___/    \/_/\/_/     \/_____/  \/___/  v1.1 #
+   #                                                             By Zion3R #
+   #                                                    www.Blackploit.com #
+   #                                                   Root@Blackploit.com #
+   #########################################################################
+
+   -------------------------------------------------------------------------
+   HASH: fc36a188c2e9554f0c19bf28520ec187
+   Possible Hashs:
+[+]  MD5
+[+]  Domain Cached Credentials - MD4(MD4(($pass)).(strtolower($username)))
+</code></pre></div></div>
+
+<p>Du MD5, à ce moment là j’espérais pour eux qu’aucun script kiddie n’ait découvert ce dump. Je vérifie quelques tables pour voir la dernière activité enregistré dans la base de données, même date que celle de la mise en ligne du dump sql. Ça commence à devenir chaud pour eux.</p>
+
+<p>J’ai récupéré quelques adresses emails des gens qui travaillent pour Etihad Airways et Four Communication (la boite qui a développé le site web et qui gère leurs communications) depuis la base de données, et je leurs envoyais un email qui explique la situation et le risque qu’ils encourent. Dans ma naïveté, je me suis attendu à un message de retour d’eux au bout de 48 heures maximum ! C’était il y a presque deux mois et toujours aucune réponse.</p>
+
+<p>Après plusieurs semaines sans réponse, j’ai décidé de leur passer un message via le programme “Disclosure Assistance” de <a href="https://www.hackerone.com/">HackerOne [3]</a>. Quelques heures après l’avoir fait, j’ai reçu un email de leur part (hackerOne pas Etihad) me confirmant la “légitimité” de ma découverte.</p>
+
+<div>
+    <img src="/images/posts/2017/hackerone.png" style="width:75%" />
+</div>
+<p><br /></p>
+
+<p>Encore une fois, naïf que je suis, j’ai pensé que la réputation de HackerOne allait les pousser à se bouger le c** et supprimer le dump sql, c’était il y a plus d’un mois.</p>
+
+<p>Le risque qu’ils encourent est grand, ça m’a pris quelques minutes pour déchiffrer les mots de passe. Je vous laisse imaginer combien parmi les employés d’Etihad et Four Coummunication utilisent le même mot de passe pour plusieurs services. Mais ce n’est pas tout, les informations sur les employés d’Etihad Airways présentes dans la base de données sont une mine d’or pour un phisher : fonction dans l’entreprise, parfois même adresse et numéro de téléphone et bien évidemment leurs emails professionnels, imaginez les dégâts que ça peut faire si quelqu’un décide de lancer une campagne de phishing en spoofant les adresses emails présentes dans le dump.</p>
+
+<p>Certains d’entre vous sont surement en train de se dire mais pourquoi alors je divulgue tout ça si c’est aussi risqué que ça ? Et bien tout simplement parce que j’en ai assez de ces entreprises, administrations publiques, etc qui s’en foutent de la sécurité de leurs sites web, applications, serveurs… Durant les dernières années je dois au moins avoir rapporté des failles chez une une bonne centaines d’entreprises et administrations, je peux vous assurer que le pourcentage de ceux qui m’ont répondu ne dépassent pas les 2%. Imaginez ma frustration quand je voyais des sites des universités, ministères, entreprises se faire piraté alors que j’avais remonté les mêmes failles qui ont permet ce piratage il y a plusieurs mois auparavant.</p>
+
+<p>Donc dorénavant, ce sera <a href="https://fr.wikipedia.org/wiki/Full_disclosure">full-disclsure [4]</a> dès que je découvre une faille et à eux de se démerder après.</p>
+
+<h3 id="liens">Liens</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0]: https://soc.ialis.me/@href
+[1]: https://fr.wikipedia.org/wiki/Web_scraping
+[2]: https://fr.wikipedia.org/wiki/Google_hacking
+[3]: https://www.hackerone.com/
+[4]: https://fr.wikipedia.org/wiki/Full_disclosure
+</code></pre></div></div>
+
+  </article>
+   
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <h1>Sur le même sujet</h1>
+                <ul>
+                
+                <li>
+                    <a href="http://localhost:4000/blog/microsoft-mots-de-passe-toute-une-histoire/">Microsoft et les mots de passe, toute une histoire
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/-blog/script-python-sites-web-meme-adresse-ip/">Un petit script pour récupérer les URLs des sites web hébergés sur la même adresse IP
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/windows-credential-guard-mimikatz/">Windows Credential Guard et Mimikatz
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/meltdown-spectre/">Deux points qui me tracassent à propos de meltdown et spectre
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/">Comment j'ai pu gagner un accès administrateur sur un serveur Windows 2012 grâce à Google
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/gg-microsft/">GG Microsft !
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+
+	<p class="feed-recomendation">
+		Si vous avez aimé ce billet, vous pouvez vous inscrire au <a href="feed/">flux RSS</a> !
+	</p>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'crowd42s-blog-1';
+    var disqus_config = function () {
+        this.page.identifier = "/blog/full-disclosure-etihad-airways/";
+    };
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+  </article>
+
+</div>
+
+            </main>
+          </div>
+        </div>
+
+        <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <footer>
+      Propulsé fièrement par Jekyll!
+    </footer>
+  </div>
+</div>
+
+
+      </div>
+    </body>
+</html>

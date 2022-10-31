@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>8 conseils pour les entreprises pour se défendre contre les ransomware | crowd42's blog</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="feed/"> 
+
+</head>
+
+
+    <body>
+      <div class="container">
+
+        <header class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1 class="">crowd42's blog</h1>
+    <p>
+    <span class="reserved">char</span> nick[<span class="number">7</span>] = <span class="string">"crowd42"</span>;
+    </p>
+    <p>
+    printf(<a href="https://github.com/crowd42" target="_blank"><span class="string">"https://github.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://mastodon.social/crowd42"
+      target="_blank"><span class="string">"https://mastodon.social/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://keybase.io/crowd42"
+      target="_blank"><span class="string">"https://keybase.io/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+
+     <p>
+    printf(<a href="https://twitter.com/crowd42"
+      target="_blank"><span class="string">"https://twitter.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<span class="string">"<span class="reserved">%s\x40</span>riseup<span class="reserved">\x2e\\\b</span>net<span class="reserved">\n</span>"</span>,nick);
+    </p>
+    <!-- <p>
+            printf(<a href="https://crowd42.github.io" target="_blank"><span class="string">"https://<span class="reserved">%s</span>.github.io<span class="reserved">\n</span>"</span></a>,nick);
+        </p> -->
+    <p>
+    puts(<a href="misc/pubkey.gpg.txt" target="_blank"><span
+        class="string">"0xdc 5a6d b445 976d 60"</span></a>);
+    </p>
+  </div>
+</header>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="menu">
+      <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/blog/">blog</a></li>
+          <li> <a href="/astuces/">astuces</a></li>
+          <li><a href="/books/">books</a></li>
+          <li><a href="/casts">*casts</a></li>
+          <li><a href="/movies">movies</a></li>
+          <li><a href="/talks">talks</a></li>
+          <li><a href="/zines">*zines</a></li>
+          <li><a href="/ressources">ressources</a></li>
+          <li><a href="/feed">feed</a></li>
+          <li><a href="https://liberapay.com/~29921/donate">donate</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <main>
+            <div class="post">
+
+  <header class="post-header">
+    <h1>8 conseils pour les entreprises pour se défendre contre les ransomware</h1>
+  </header>
+
+  <article class="post-content">
+  <div class="post">
+
+  <header class="post-header">
+    <p class="meta">
+        Jan 10, 2017
+        
+        
+        •
+        <span><a href="/category/#ransomware" class="reserved">ransomware</a>,</span><span><a href="/category/#infosec" class="reserved">infosec</a></span>
+    </p>
+  </header>
+
+  <article class="post-content">
+  <h3 class="no_toc" id="sommaire">Sommaire</h3>
+
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#1-backup-backup-et-backup" id="markdown-toc-1-backup-backup-et-backup">1. Backup, backup et backup</a></li>
+  <li><a href="#2-security-awareness-training" id="markdown-toc-2-security-awareness-training">2. Security Awareness Training</a></li>
+  <li><a href="#3-gestion-des-correctifs-logiciels" id="markdown-toc-3-gestion-des-correctifs-logiciels">3. Gestion des correctifs logiciels</a></li>
+  <li><a href="#4-antivirus-malware-et-firewalls" id="markdown-toc-4-antivirus-malware-et-firewalls">4. Antivirus, malware et firewalls</a></li>
+  <li><a href="#5-liste-blanche-des-applications-autorisées" id="markdown-toc-5-liste-blanche-des-applications-autorisées">5. Liste blanche des applications autorisées</a></li>
+  <li><a href="#6-gestion-des-droits-et-permissions" id="markdown-toc-6-gestion-des-droits-et-permissions">6. Gestion des droits et permissions</a></li>
+  <li><a href="#7-network-segmentation" id="markdown-toc-7-network-segmentation">7. Network segmentation</a></li>
+  <li><a href="#8-tests-dintrusion" id="markdown-toc-8-tests-dintrusion">8. Tests d’intrusion</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+  <li><a href="#liens" id="markdown-toc-liens">Liens</a></li>
+</ul>
+
+<h4 id="introduction">Introduction</h4>
+<p>Dans un précédent billet, je vous ai parlé de l’initiative <a href="blog/no-more-ransom">No More Ransom
+[0]</a>, qui aspire à aider les victimes des ransomware à reprendre le
+contrôle de leurs ordinateurs infectés. Une initiative très louable mais qui a malheureusement ses limites.</p>
+
+<p>D’abord, parce que No More Ransom n’est pas une solution miracle qui marchera
+contre tout les ransomware et il ne le sera jamais. Malgré tout le efforts des
+gens et entreprises derrière cette initiative, il y aura toujours des malins qui vont développer des nouveaux malwares (oui, un
+ransomware n’est d’autre qu’un malware). Tout comme les anti-virus n’ont pas
+réussi à offrir une protection à 100% contre les virus.</p>
+
+<p>Deuxièmement, les ransomware sont un peu comme les <a href="https://en.wikipedia.org/wiki/Payload_(computing)#Security">payloads [1]</a>,
+    l’infection est le résultat de l’exécution d’un <a href="https://en.wikipedia.org/wiki/Exploit">exploit [\2]</a> ou d’une campagne de
+phishing. Dès lors la meilleure protection contre les ransomware c’est d’adopter une
+approche pro-active. Prévenir vaut mieux que guérir, n’est-ce pas ?</p>
+
+<p>Alors qu’ils sont les actions qu’une entreprise doit prendre pour éviter d’être
+la prochaine victime des ransomware ?</p>
+
+<h4 id="1-backup-backup-et-backup">1. Backup, backup et backup</h4>
+
+<p>C’est AMHA la meilleure défense qui existe contre les ransomware,
+    malheureusement il existe encore des entreprises, surtout des PME, qui n’ont
+    toujours pas pris conscience de l’importance d’avoir des sauvegardes à jour de
+    leurs données. Et même quand c’est fait, on peut pas dire que les bonne
+    pratiques ont été respecté : des backup sur des CD/DVD ou clé USB, zéro
+    vérification de l’intégrité de la sauvegarde, etc.</p>
+
+<p>Je conseille toujours à mes clients de faire des sauvegardes quotidiennes de
+leurs données sensibles (par exemple la base de données de l’ERP si elle est
+        hébergée localement), et les données les moins sensibles de manière
+hebdomadaire et de garder trois copies minimum des sauvegardes dans des endroits
+différents :</p>
+
+<ul>
+  <li>une sur un disque externe :</li>
+  <li>une autre sur un <a href="https://en.wikipedia.org/wiki/Network_Attached_Storage">NAS [3]</a> ;</li>
+  <li>une dernière sur un service de stockage en ligne, de préférence une solution hébergée
+sur un serveur de l’entreprise.</li>
+</ul>
+
+<p>Certains ransomware infectent aussi les disques durs externes connectés aux
+ordinateurs victimes, donc une fois que votre sauvegarde est terminée, songez à
+le retirer de l’ordinateur.</p>
+
+<p>Enfin, il ne faut surtout pas oublier de vérifier l’intégrité de vos sauvegardes, qu’il n’y a pas eu d’altération
+(volontaire ou non) des données. Le mot clé est de ne jamais faire confiance aux programmes. Testez vos backup au moins une fois par mois.</p>
+
+<h4 id="2-security-awareness-training">2. Security Awareness Training</h4>
+
+<p>Tous les rapports et études réalisés par les sociétés spécialisées le disent : le
+phishing et le social-engineering restent les vecteurs les plus utilisés pour
+infecter les entreprises. <br />
+Je sais que les patrons et entreprises marocaines ne sont pas habitués à ça,
+   mais ce genre de formation n’est pas un luxe dont ils peuvent
+   s’en passer de nos jours.</p>
+
+<p>Ces formations et ateliers permettent à vos employés d’acquérir des réflexions qui vont leurs permettre de distinguer par
+   exemple un email légitime d’un autre malicieux, de savoir comment repérer un
+   <a href="https://en.wikipedia.org/wiki/Mail_spoofing">mail spoofing [4]</a>. Dans une attaque de type <a href="https://fr.wikipedia.org/wiki/Spear_phishing">Spear Phishing [5]</a>,
+   l’attaquant peut par exemple usurper l’identité et envoyer un email qui va
+   paraitre légitime à un employé (genre nomDuN+1@entreprise.com), d’où
+   l’utilité de toujours scanner les fichiers joints que vous recevez, même
+   s’ils sont envoyés par des adresses de confiance.</p>
+
+<p>Les réseaux sociaux sont un autre vecteur dans les attaques phishing, au lieu de
+les censurer (vos employés trouveront toujours un moyen de contourner ce blocage), essayez plutôt
+de les sensibiliser à l’usage des réseaux sociaux.</p>
+
+<h4 id="3-gestion-des-correctifs-logiciels">3. Gestion des correctifs logiciels</h4>
+
+<p>Les exploit kits qui sont d’ailleurs le moyen préféré des hackers pour délivrer
+leurs exploits et payloads, profitent des vulnérabilités dans les
+logiciels installés sur les machines des victimes pour les infecter, d’où
+l’intérêt d’avoir une politique de gestion de correctifs au sein des
+entreprises.</p>
+
+<p>Une bonne politique de gestion de correctifs doit impérativement inclure non
+seulement les mises à jour du système d’exploitation et les applications métiers
+critiques, mais aussi tout les logiciels tiers, notamment les addons et plugins
+installés sur les navigateurs web à commencer par <a href="https://www.recordedfuture.com/top-vulnerabilities-2015/">flash [6]</a> et java. N’oubliez pas,
+    les blackhats n’ont besoin que d’une application vulnérable sur une seule
+    mqchine pour compromettre tout votre système d’information.</p>
+
+<h4 id="4-antivirus-malware-et-firewalls">4. Antivirus, malware et firewalls</h4>
+
+<p>Là encore c’est fou le nombre des utilisateurs qui s’obstinent à installer des
+antivirus et anti-malware sous prétexte que ça ralenti leurs machines ! Si un
+jour quelqu’un vous fourni ce conseil, vous pouvez lui foutre une claque, vous
+avez ma bénédiction.</p>
+
+<p>Cependant, installer un antivirus et payer une petite fortune annuellement pour les
+licences de votre parc informatique sans les jamais mettre à jour est une
+aberration. Assurez vous toujours d’appliquer les mises à jour que vous proposent
+votre antivirus. L’utilisation d’un firewall ajoutera une autre couche de
+sécurité non négligeable, idem pour le système de <a href="https://en.wikipedia.org/wiki/Intrusion_Detection_system">détection d’intrusion (IDS)
+[7]</a>.</p>
+
+<h4 id="5-liste-blanche-des-applications-autorisées">5. Liste blanche des applications autorisées</h4>
+
+<p>Une autre pratique qui a prouvé son efficacité, c’est d’établir une liste blanche des applications
+autorisées à s’exécuter sur les machines de l’entreprise. Je recommande souvent
+à mes clients de privilégier cette méthode au blacklisting (liste noir), tout
+simplement parce qu’il est plus facile de déterminer les applications et
+logiciels qu’on veut voir s’exécuter sur nos machines que de mettre en place une
+liste des applications à bloquer, chose qui est tout simplement impossible à
+réaliser.</p>
+
+<p>Cette technique peut s’étendre aussi au plugin flash, si vous en avez besoin au
+travail, vous pouvez alors l’autoriser seulement sur les sites web de confiance
+et le bloquer sur les autres.</p>
+
+<p>Depuis 2015 on sait qu’il est possible qu’un <a href="http://arstechnica.com/security/2016/03/big-name-sites-hit-by-rash-of-malicious-ads-spreading-crypto-ransomware/">ransomware se propage en via les
+publicités sur les sites web [8]</a> que vous visitez. Installez un adbloack (je
+        vous recommande uBlock origin), c’est gratuit et vous protégera d’autres
+risques.</p>
+
+<p>Les fichiers avec des macros dedans (.docm par exemple) sont aussi à surveiller
+de très près et devront être scanner et filtrer par votre serveur mail avant
+d’être délivrer. Idem pour le fichiers exécutables.</p>
+
+<h4 id="6-gestion-des-droits-et-permissions">6. Gestion des droits et permissions</h4>
+
+<p>La majorité des taches que vos employés exécutent sur leurs machines (lecture et
+        envoie des emails, navigation web, édition de documents…) ne requirent
+pas des droits qui leurs permettront de démarrer ou d’arrêter des services,
+    d’éditer des clés du registre Windows, d’installer des programmes, etc. Inutile donc qu’ils aient
+    des droits très élevés sur leurs ordinateurs alors qu’ils
+    n’en ont pas besoin. Le cas le plus flagrant est sans doute toutes machines
+    Windows dont l’utilisateur par défaut est le compte administrateur créer au
+    moment de l’installation !</p>
+
+<p>Pour comprendre les risquent que ça peut engendrer, il faut savoir que la plupart 
+des programmes malveillants (malwares, virus, ransomware…) s’exécutent en
+utilisant les droits et permissions de l’utilisateur connecté. Si cet
+utilisateur est un administrateur, alors le malware va lui aussi s’exécuter 
+avec les droits administrateur.</p>
+
+<h4 id="7-network-segmentation">7. Network segmentation</h4>
+
+<p>Une autre méthode de résister aux attaques c’est que les administrateurs réseaux
+de votre entreprise appliquent une <a href="https://fr.wikipedia.org/wiki/Segmentation_r%C3%A9seau">segmentation de leurs réseau [\9]</a>Au lieu de laisser tout vos
+employés accéder aux fichiers depuis un seul serveur et réseau, le mieux serait
+de les séparer en groupes, ainsi si un serveur ou réseau se fait compromettre,
+   ça n’affectera pas tout le monde.</p>
+
+<h4 id="8-tests-dintrusion">8. Tests d’intrusion</h4>
+<p>Enfin, il est bon d’avoir d’auditer le système informatique de votre entreprise
+en réalisant des <a href="https://fr.wikipedia.org/wiki/Test_d'intrusion">test d’intrusion [10]</a>. Ils vont vous permettre
+d’identifier les failles potentielles dans votre système d’information et les
+corriger avant qu’elles soient exploité par un attaquant malveillant.</p>
+
+<h4 id="conclusion">Conclusion</h4>
+<p>Voilà, c’est loin d’être une liste exhaustive de toutes les actions à prendre
+pour se défendre contre les ransomware, mais j’espère quand même qu’elle va vous
+aider. Dans un prochain billet, je vais vous parler des actions et démarches à
+faire si vous êtes infectés par un ransomware.</p>
+
+<p>Si vous avez des questions, remarques ou besoin d’aide, vous pouvez me contactez
+ici en laissant un commentaire, par email ou via <a href="https://twitter.com/crowd42">Twitter [11]</a> et
+j’essaierai de vous répondre dans les plus bref délais.</p>
+
+<h3 id="liens">Liens</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0]: blog/no-more-ransom
+[1]: https://en.wikipedia.org/wiki/Payload_(computing)#Security
+[2]: https://en.wikipedia.org/wiki/Exploit
+[3]: https://en.wikipedia.org/wiki/Network_Attached_Storage
+[4]: https://en.wikipedia.org/wiki/Mail_spoofing
+[5]: https://fr.wikipedia.org/wiki/Spear_phishing
+[6]: https://www.recordedfuture.com/top-vulnerabilities-2015/
+[7]: https://en.wikipedia.org/wiki/Intrusion_Detection_system
+[8]: http://arstechnica.com/security/2016/03/big-name-sites-hit-by-rash-of-malicious-ads-spreading-crypto-ransomware/
+[9]: https://fr.wikipedia.org/wiki/Segmentation_r%C3%A9seau
+[10]: https://fr.wikipedia.org/wiki/Test_d'intrusion
+[11]: https://twitter.com/crowd42
+</code></pre></div></div>
+
+
+  </article>
+   
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+                
+                <h1>Sur le même sujet</h1>
+                <ul>
+                
+                <li>
+                    <a href="http://localhost:4000/blog/microsoft-mots-de-passe-toute-une-histoire/">Microsoft et les mots de passe, toute une histoire
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/-blog/script-python-sites-web-meme-adresse-ip/">Un petit script pour récupérer les URLs des sites web hébergés sur la même adresse IP
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/windows-credential-guard-mimikatz/">Windows Credential Guard et Mimikatz
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/meltdown-spectre/">Deux points qui me tracassent à propos de meltdown et spectre
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/full-disclosure-etihad-airways/">Full Disclosure : Des emails et mots de passe de la compagnie aérienne Etihad Airways dans l'air
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/">Comment j'ai pu gagner un accès administrateur sur un serveur Windows 2012 grâce à Google
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+
+	<p class="feed-recomendation">
+		Si vous avez aimé ce billet, vous pouvez vous inscrire au <a href="feed/">flux RSS</a> !
+	</p>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'crowd42s-blog-1';
+    var disqus_config = function () {
+        this.page.identifier = "/blog/comment-entreprise-preparer-contre-ransomware/";
+    };
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+  </article>
+
+</div>
+
+            </main>
+          </div>
+        </div>
+
+        <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <footer>
+      Propulsé fièrement par Jekyll!
+    </footer>
+  </div>
+</div>
+
+
+      </div>
+    </body>
+</html>

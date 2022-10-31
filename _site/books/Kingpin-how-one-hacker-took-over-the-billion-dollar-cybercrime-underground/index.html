@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Kingpin, how one hacker took over the billion dollar cybercrime underground | crowd42's blog</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="feed/"> 
+
+</head>
+
+
+    <body>
+      <div class="container">
+
+        <header class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1 class="">crowd42's blog</h1>
+    <p>
+    <span class="reserved">char</span> nick[<span class="number">7</span>] = <span class="string">"crowd42"</span>;
+    </p>
+    <p>
+    printf(<a href="https://github.com/crowd42" target="_blank"><span class="string">"https://github.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://mastodon.social/crowd42"
+      target="_blank"><span class="string">"https://mastodon.social/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://keybase.io/crowd42"
+      target="_blank"><span class="string">"https://keybase.io/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+
+     <p>
+    printf(<a href="https://twitter.com/crowd42"
+      target="_blank"><span class="string">"https://twitter.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<span class="string">"<span class="reserved">%s\x40</span>riseup<span class="reserved">\x2e\\\b</span>net<span class="reserved">\n</span>"</span>,nick);
+    </p>
+    <!-- <p>
+            printf(<a href="https://crowd42.github.io" target="_blank"><span class="string">"https://<span class="reserved">%s</span>.github.io<span class="reserved">\n</span>"</span></a>,nick);
+        </p> -->
+    <p>
+    puts(<a href="misc/pubkey.gpg.txt" target="_blank"><span
+        class="string">"0xdc 5a6d b445 976d 60"</span></a>);
+    </p>
+  </div>
+</header>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="menu">
+      <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/blog/">blog</a></li>
+          <li> <a href="/astuces/">astuces</a></li>
+          <li><a href="/books/">books</a></li>
+          <li><a href="/casts">*casts</a></li>
+          <li><a href="/movies">movies</a></li>
+          <li><a href="/talks">talks</a></li>
+          <li><a href="/zines">*zines</a></li>
+          <li><a href="/ressources">ressources</a></li>
+          <li><a href="/feed">feed</a></li>
+          <li><a href="https://liberapay.com/~29921/donate">donate</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <main>
+            <div class="post">
+
+  <header class="post-header">
+    <h1>Kingpin, how one hacker took over the billion dollar cybercrime underground</h1>
+  </header>
+
+  <article class="post-content">
+  <div class="post">
+
+  <header class="post-header">
+    <p class="meta">
+        Nov 1, 2017
+        
+        
+        •
+        <span><a href="/category/#livre" class="reserved">livre</a>,</span><span><a href="/category/#biographie" class="reserved">biographie</a>,</span><span><a href="/category/#hacker" class="reserved">hacker</a>,</span><span><a href="/category/#cybercrime" class="reserved">cybercrime</a>,</span><span><a href="/category/#Max Vision" class="reserved">Max Vision</a>,</span><span><a href="/category/#Max Butler" class="reserved">Max Butler</a></span>
+    </p>
+  </header>
+
+  <article class="post-content">
+  <p>Il y a des livres que quand tu les finisses, tu te demandes comment ça se fait que Hollywood ne les a pas adapté au grand écran, <a href="https://www.goodreads.com/book/show/9319468-kingpin?ac=1">Kingpin: how one hacker took over the one billion dollar cybercrime underground [0]</a> en fait partie. L’auteur de ce bouquin n’est d’autre que <a href="https://en.wikipedia.org/wiki/Kevin_Poulsen">Kevin Poulson [1]</a>, journaliste et ancien senior editor à <a href="https://www.wired.com">Wired Magazine [2]</a> et surtout une des figures pionnières de la communautés des hackers. Bien que dès les premières pages du livre on sait l’issue de l’aventure de Max Butler (Aka Iceman, Max Vision, Ghost23…), on n’est pas moins captivé le restant des pages par l’histoire de ce hacker.</p>
+
+<p>Kevin Poulson débute le livre par nous raconter comment Max Butler à commencer à s’intéresser à l’informatique et la sécurité en particulier, sa première incarcération et ses premiers démêlés avec la justice. Tout au long ce livre, on suit la transformation de Max Vision d’un <a href="https://en.wikipedia.org/wiki/White_hat_(computer_security)">white hat [3]</a> qui a contribué à de nombreux logiciels dans le monde la sécurité (<a href="https://en.wikipedia.org/wiki/Nessus_(software)">Nessus [4]</a>, <a href="https://en.wikipedia.org/snort_(software)">snort [5]</a>, il a beaucoup contribué aux projets  <a href="https://en.wikipedia.org/wiki/Bro_(software)">BRO [6]</a>, un des tout premiers système de détection d’intrusion, et <a href="http://www.honeynet.org/about">Honeypot) [7]</a>, pour devenir un des plus célèbres black hat.</p>
+
+<p>L’un de ses plus fameux faits d’arme est sans aucun doute quand une grosse faille (<a href="https://en.wikipedia.org/wiki/Buffer_overflow">Buffer Overflow [8]</a>) dans le serveur DNS <a href="https://en.wikipedia.org/wiki/Carding_(fraud)">BIND [9]</a> a été découverte. Il a alors écrit un exploit qui lui avait permet de prendre le contrôle des milliers d’ordinateurs ! Mais ce n’était pas le but de son action, il voulait (ce qu’il a fait d’ailleurs) installer un correctif de la vulnérabilité sur les ordinateurs des victimes. Il va écoper d’une peine de 18 mois pour ça (parmis les ordinateurs compromis il y avait ceux du département de la défense.).</p>
+
+<p>Après avoir purgé sa peine, Max décide de se tourner vers le monde du <a href="https://en.wikipedia.org/wiki/Carding_(fraud)">carding [9]</a>, il étudie les sites le mode de fonctionnement des sites russes et de ceux de l’europe de l’est et lance par la suite <a href="https://en.wikipedia.org/wiki/CardersMarket">son propre forum [10]</a> dédié à l’achat et vente des cartes bancaires piratées depuis des sites web d’e-commerce ou des points de vente. Mais il ne va pas se contenter de ça, pendant 48 heures, Max va s’en prendre à ses concurrents dans son nouveau business et pirater les cinq principaux forums où transitaient les activités liées aux cartes de crédit. Il va ensuite injecter leurs bases de données dans son propre forum et il envoya un email à tout les “nouveaux utilisateurs pour les informer”. Son but était de former un seul endroit où tout les pirates et clients pouvaient se rencontrer, mais son action va attirer sur lui l’attention d’un agent du FBI, Keith Mularski, qui avait infiltré un des forums victimes de l’action de Max Butler. Il va alors un long jeu du chat et la sourie entre les deux que je vous découvrir en lisant, je ne veux pas vous spoiler ce plaisir.</p>
+
+<p>Max Butler perge maintenant une peine de 13 ans, il sortira du prison en 2019.</p>
+
+<h3 id="liens">Liens</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0]: https://www.goodreads.com/book/show/9319468-kingpin?ac=1
+[1]: https://en.wikipedia.org/wiki/Kevin_Poulsen
+[2]: https://www.wired.com
+[3]: https://en.wikipedia.org/wiki/White_hat_(computer_security)
+[4]: https://en.wikipedia.org/wiki/Nessus_(software)
+[5]: https://en.wikipedia.org/Snort_(software)
+[6]: https://en.wikipedia.org/wiki/Bro_(software)
+[7]: http://www.honeynet.org/about
+[8]: https://en.wikipedia.org/wiki/Buffer_overflow
+[9]: https://en.wikipedia.org/wiki/Carding_(fraud)
+[10] https://en.wikipedia.org/wiki/CardersMarket
+</code></pre></div></div>
+
+
+  </article>
+   
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <h1>Sur le même sujet</h1>
+                <ul>
+                
+                <li>
+                    <a href="http://localhost:4000/books/livre-breaking-into-information-secutiy/">Livre : Breaking into information security: learning the ropes 101
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+
+	<p class="feed-recomendation">
+		Si vous avez aimé ce billet, vous pouvez vous inscrire au <a href="feed/">flux RSS</a> !
+	</p>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'crowd42s-blog-1';
+    var disqus_config = function () {
+        this.page.identifier = "/books/Kingpin-how-one-hacker-took-over-the-billion-dollar-cybercrime-underground/";
+    };
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+  </article>
+
+</div>
+
+            </main>
+          </div>
+        </div>
+
+        <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <footer>
+      Propulsé fièrement par Jekyll!
+    </footer>
+  </div>
+</div>
+
+
+      </div>
+    </body>
+</html>

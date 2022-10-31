@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Privacy BADGER, la nouvelle extension développée par l’EFF | crowd42's blog</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="feed/"> 
+
+</head>
+
+
+    <body>
+      <div class="container">
+
+        <header class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1 class="">crowd42's blog</h1>
+    <p>
+    <span class="reserved">char</span> nick[<span class="number">7</span>] = <span class="string">"crowd42"</span>;
+    </p>
+    <p>
+    printf(<a href="https://github.com/crowd42" target="_blank"><span class="string">"https://github.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://mastodon.social/crowd42"
+      target="_blank"><span class="string">"https://mastodon.social/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://keybase.io/crowd42"
+      target="_blank"><span class="string">"https://keybase.io/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+
+     <p>
+    printf(<a href="https://twitter.com/crowd42"
+      target="_blank"><span class="string">"https://twitter.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<span class="string">"<span class="reserved">%s\x40</span>riseup<span class="reserved">\x2e\\\b</span>net<span class="reserved">\n</span>"</span>,nick);
+    </p>
+    <!-- <p>
+            printf(<a href="https://crowd42.github.io" target="_blank"><span class="string">"https://<span class="reserved">%s</span>.github.io<span class="reserved">\n</span>"</span></a>,nick);
+        </p> -->
+    <p>
+    puts(<a href="misc/pubkey.gpg.txt" target="_blank"><span
+        class="string">"0xdc 5a6d b445 976d 60"</span></a>);
+    </p>
+  </div>
+</header>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="menu">
+      <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/blog/">blog</a></li>
+          <li> <a href="/astuces/">astuces</a></li>
+          <li><a href="/books/">books</a></li>
+          <li><a href="/casts">*casts</a></li>
+          <li><a href="/movies">movies</a></li>
+          <li><a href="/talks">talks</a></li>
+          <li><a href="/zines">*zines</a></li>
+          <li><a href="/ressources">ressources</a></li>
+          <li><a href="/feed">feed</a></li>
+          <li><a href="https://liberapay.com/~29921/donate">donate</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <main>
+            <div class="post">
+
+  <header class="post-header">
+    <h1>Privacy BADGER, la nouvelle extension développée par l’EFF</h1>
+  </header>
+
+  <article class="post-content">
+  <div class="post">
+
+  <header class="post-header">
+    <p class="meta">
+        May 6, 2014
+        
+        
+        •
+        <span><a href="/category/#vie privée" class="reserved">vie privée</a>,</span><span><a href="/category/#eff" class="reserved">eff</a>,</span><span><a href="/category/#privacy badger" class="reserved">privacy badger</a>,</span><span><a href="/category/#firefox" class="reserved">firefox</a></span>
+    </p>
+  </header>
+
+  <article class="post-content">
+  <p><a href="https://eff.org">L’Electronic Frontier Foundation (EFF)[0]</a> est connue essentiellement pour ses combats en faveur de la protection de la vie privée et les libertés numériques des internautes. Mais son champ d’action ne se limite pas à des batailles dans les tribunaux ou lancement des campagnes de sensibilisation (ACTA, SOPA, TAFTA pour ne citer qu’eux), elle est connue du grand public et de l’internaute “lambda” pour être derrière l’extension HTTPS Everywhere (en collaboration avec The Tor Project).</p>
+
+<p>Récemment, l’EFF a annoncé qu’elle travaillait sur une nouvelle extension, qui va permettre aux utilisateurs de bloquer les publicités et autres scripts tiers sur les sites que vous visitez, ceux qui essaient de vous traquer pour être plus précis. L’extension s’appelle Privacy Badger.</p>
+
+<p>L’Electronic Frontier Foundation a expliqué dans un <a href="https://www.eff.org/deeplinks/2014/04/privacy-badger">billet de blog [1]</a> comment Privacy Badger fonctionne. Quand vous visitez un site web, l’extension note tous les scripts, images issus des domaines tiers (google analytics, adsense par exemple). Si ces derniers essaient de vous traquer (collecter des informations à propos des sites que vous visitez), Privacy Badger les désactive immédiatement, sauf si ces scripts sont nécessaires pour le site (une carte de google map par exemple).</p>
+
+<p>Pour le moment Privacy Badge est encore en version alpha, donc si vous décidez de l’installer, attendez-vous à quelques bugs. L’extension est disponible pour Firefox et Chromium (Google Chrome) et vous pouvez <a href="https://www.eff.org/privacybadger">la télécharger depuis cette page [2]</a>.</p>
+
+<h3 id="liens">Liens</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0]: https://eff.org
+[1]: https://www.eff.org/deeplinks/2014/04/privacy-badger
+[2]: https://www.eff.org/privacybadger
+</code></pre></div></div>
+
+  </article>
+   
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+
+	<p class="feed-recomendation">
+		Si vous avez aimé ce billet, vous pouvez vous inscrire au <a href="feed/">flux RSS</a> !
+	</p>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'crowd42s-blog-1';
+    var disqus_config = function () {
+        this.page.identifier = "/blog/privay-badger-extension-eff/";
+    };
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+  </article>
+
+</div>
+
+            </main>
+          </div>
+        </div>
+
+        <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <footer>
+      Propulsé fièrement par Jekyll!
+    </footer>
+  </div>
+</div>
+
+
+      </div>
+    </body>
+</html>

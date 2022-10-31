@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Choisir un bon mot de passe | crowd42's blog</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="feed/"> 
+
+</head>
+
+
+    <body>
+      <div class="container">
+
+        <header class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1 class="">crowd42's blog</h1>
+    <p>
+    <span class="reserved">char</span> nick[<span class="number">7</span>] = <span class="string">"crowd42"</span>;
+    </p>
+    <p>
+    printf(<a href="https://github.com/crowd42" target="_blank"><span class="string">"https://github.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://mastodon.social/crowd42"
+      target="_blank"><span class="string">"https://mastodon.social/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://keybase.io/crowd42"
+      target="_blank"><span class="string">"https://keybase.io/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+
+     <p>
+    printf(<a href="https://twitter.com/crowd42"
+      target="_blank"><span class="string">"https://twitter.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<span class="string">"<span class="reserved">%s\x40</span>riseup<span class="reserved">\x2e\\\b</span>net<span class="reserved">\n</span>"</span>,nick);
+    </p>
+    <!-- <p>
+            printf(<a href="https://crowd42.github.io" target="_blank"><span class="string">"https://<span class="reserved">%s</span>.github.io<span class="reserved">\n</span>"</span></a>,nick);
+        </p> -->
+    <p>
+    puts(<a href="misc/pubkey.gpg.txt" target="_blank"><span
+        class="string">"0xdc 5a6d b445 976d 60"</span></a>);
+    </p>
+  </div>
+</header>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="menu">
+      <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/blog/">blog</a></li>
+          <li> <a href="/astuces/">astuces</a></li>
+          <li><a href="/books/">books</a></li>
+          <li><a href="/casts">*casts</a></li>
+          <li><a href="/movies">movies</a></li>
+          <li><a href="/talks">talks</a></li>
+          <li><a href="/zines">*zines</a></li>
+          <li><a href="/ressources">ressources</a></li>
+          <li><a href="/feed">feed</a></li>
+          <li><a href="https://liberapay.com/~29921/donate">donate</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <main>
+            <div class="post">
+
+  <header class="post-header">
+    <h1>Choisir un bon mot de passe</h1>
+  </header>
+
+  <article class="post-content">
+  <div class="post">
+
+  <header class="post-header">
+    <p class="meta">
+        Dec 2, 2016
+        
+        
+        •
+        <span><a href="/category/#infosec" class="reserved">infosec</a>,</span><span><a href="/category/#passwords" class="reserved">passwords</a>,</span><span><a href="/category/#hacking" class="reserved">hacking</a></span>
+    </p>
+  </header>
+
+  <article class="post-content">
+  <p>Récemment j’ai mené un test d’intrusion (penetration testing) pour le compte
+d’une petite entreprise marocaine, une boite de communication mais qui réalise
+aussi des sites web pour ses clients (des grandes marques marocaines et
+        internationales). Pour cette dernière activité elle employait deux
+personnes : un dev web “spécialisé drupal” et un web designer slash web
+designer… en plus d’une ou deux personnes avec des titres farfelus : degital
+machin, vous voyez ce que je veux dire.</p>
+
+<p>Si je me fie à ma mémoire, je crois que c’était à des p0wnages les faciles que
+j’ai pu réalisé, il m’a fallu moins de 3 heures pour avoir accès à tout leurs
+comptes emails, leur ERP, sites web de leurs clients, compte administrateur sur
+un serveur d’emailing, etc. Les ordinateurs des employés était hors de scope, je
+pouvais donc pas les attaquer.</p>
+
+<p>Comment j’ai fait ? C’était très simple, trop simple je dirais même et à la
+porté de n’importe quel wannabe pentester comme moi.
+Lors de la phase reconnaissance, j’avais découvert un répertoire qui contenait
+une vieille version du site de la boite, quelques tests manuels et j’ai vite
+trouvé une faille file uploqd des XSS à gogo, mais bizarrement pas de SQLi !
+Prochaine étape était de générer un backdoor avec <a href="[https://github.com/epinna/weevely3]">Weevely [0]</a> et j’ai
+copié le code dans une dizaine de fichiers présents sur leur espace web.</p>
+
+<p>Après je suis partie à la chasse des mots de passe, et c’est là que c’est devenu
+“fun”. Je me suis placé dans le répertoire “Mail” et à coup de “grep” j’ai
+récupéré presque TOUT les mots de passe de la boite (ceux du wifi compris) ainsi que de ceux de leurs clients, le reste John The Ripper s’en est occupé.
+Les deux développeurs ont eu cette géniale idée de transmettre les mots de passe
+des comptes qu’ils créaient en mail et “plain text”, mais ce n’était pas leur
+seule boulette, voilà un aperçu de leurs mdp :</p>
+
+<ul>
+  <li>prenom2015</li>
+  <li>prenom2016</li>
+  <li>entrepsie2014</li>
+  <li>service2015</li>
+  <li>…</li>
+</ul>
+
+<p>Et quand ils voulaient compliquer les choses, ils ajoutaient un @ à la fin des
+mdp, j’étais partagé entre deux vie : partir dans un fou rire, ou me tirer les
+cheveux.</p>
+
+<p>J’ai ensuite téléchargé le code source du site web pour un audit plus poussé
+histoire de trouver des vulnérabilités que j’aurais loupé et j’ai passé un coup
+de fil au CEO de la boite pour lui annoncer la nouvelle. Son expression de
+visage quand je lui ai montré mes trouvailles était “priceless”.</p>
+
+<p>Ce qu’il faut retenir de tout ça ?</p>
+
+<ul>
+  <li>Utiliser des combinaisons de lettres, chiffres et caractères spéciaux d’au
+moins 12 caractères ;</li>
+  <li>Éviter à tout prix d’utiliser vos noms, prénoms, num de téléphone, date de
+naissance dans vos de mots de passe ;</li>
+  <li>Utiliser un gestionnaire de mot de passe ;</li>
+  <li>Éviter les mots de passe avec le nom de la boite/service dedans</li>
+  <li>Et surtout évitez d’envoyer les mots de passe dans vos échanges email en
+clair, je ne compte plus le nombre de fois où j’ai pu constater cette pratique
+chez des boites, c’est comme si vous inscrivez vos mots de passe dans des
+post-it et les collez sur vos ordis.. oh wait !</li>
+  <li>Instaurer une password policy dans votre boite, ça peut être un peu chaud au
+début à faire respecter par tout vous employés, mais croyez moi, elle vous
+sauvera de plusieurs catastrophes.</li>
+</ul>
+
+<h2 id="liens">Liens</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0]: [https://github.com/epinna/weevely3]
+</code></pre></div></div>
+
+  </article>
+   
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <h1>Sur le même sujet</h1>
+                <ul>
+                
+                <li>
+                    <a href="http://localhost:4000/blog/microsoft-mots-de-passe-toute-une-histoire/">Microsoft et les mots de passe, toute une histoire
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/-blog/script-python-sites-web-meme-adresse-ip/">Un petit script pour récupérer les URLs des sites web hébergés sur la même adresse IP
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/windows-credential-guard-mimikatz/">Windows Credential Guard et Mimikatz
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/meltdown-spectre/">Deux points qui me tracassent à propos de meltdown et spectre
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/full-disclosure-etihad-airways/">Full Disclosure : Des emails et mots de passe de la compagnie aérienne Etihad Airways dans l'air
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/">Comment j'ai pu gagner un accès administrateur sur un serveur Windows 2012 grâce à Google
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+
+	<p class="feed-recomendation">
+		Si vous avez aimé ce billet, vous pouvez vous inscrire au <a href="feed/">flux RSS</a> !
+	</p>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'crowd42s-blog-1';
+    var disqus_config = function () {
+        this.page.identifier = "/blog/choisir-un-bon-mot-de-passe/";
+    };
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+  </article>
+
+</div>
+
+            </main>
+          </div>
+        </div>
+
+        <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <footer>
+      Propulsé fièrement par Jekyll!
+    </footer>
+  </div>
+</div>
+
+
+      </div>
+    </body>
+</html>

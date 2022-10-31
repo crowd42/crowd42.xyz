@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>GG Microsft ! | crowd42's blog</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="feed/"> 
+
+</head>
+
+
+    <body>
+      <div class="container">
+
+        <header class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1 class="">crowd42's blog</h1>
+    <p>
+    <span class="reserved">char</span> nick[<span class="number">7</span>] = <span class="string">"crowd42"</span>;
+    </p>
+    <p>
+    printf(<a href="https://github.com/crowd42" target="_blank"><span class="string">"https://github.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://mastodon.social/crowd42"
+      target="_blank"><span class="string">"https://mastodon.social/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://keybase.io/crowd42"
+      target="_blank"><span class="string">"https://keybase.io/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+
+     <p>
+    printf(<a href="https://twitter.com/crowd42"
+      target="_blank"><span class="string">"https://twitter.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<span class="string">"<span class="reserved">%s\x40</span>riseup<span class="reserved">\x2e\\\b</span>net<span class="reserved">\n</span>"</span>,nick);
+    </p>
+    <!-- <p>
+            printf(<a href="https://crowd42.github.io" target="_blank"><span class="string">"https://<span class="reserved">%s</span>.github.io<span class="reserved">\n</span>"</span></a>,nick);
+        </p> -->
+    <p>
+    puts(<a href="misc/pubkey.gpg.txt" target="_blank"><span
+        class="string">"0xdc 5a6d b445 976d 60"</span></a>);
+    </p>
+  </div>
+</header>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="menu">
+      <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/blog/">blog</a></li>
+          <li> <a href="/astuces/">astuces</a></li>
+          <li><a href="/books/">books</a></li>
+          <li><a href="/casts">*casts</a></li>
+          <li><a href="/movies">movies</a></li>
+          <li><a href="/talks">talks</a></li>
+          <li><a href="/zines">*zines</a></li>
+          <li><a href="/ressources">ressources</a></li>
+          <li><a href="/feed">feed</a></li>
+          <li><a href="https://liberapay.com/~29921/donate">donate</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <main>
+            <div class="post">
+
+  <header class="post-header">
+    <h1>GG Microsft !</h1>
+  </header>
+
+  <article class="post-content">
+  <div class="post">
+
+  <header class="post-header">
+    <p class="meta">
+        Dec 21, 2017
+        
+        
+        •
+        <span><a href="/category/#news" class="reserved">news</a>,</span><span><a href="/category/#wtf" class="reserved">wtf</a>,</span><span><a href="/category/#microsft" class="reserved">microsft</a>,</span><span><a href="/category/#windows" class="reserved">windows</a>,</span><span><a href="/category/#keeper" class="reserved">keeper</a>,</span><span><a href="/category/#infosec" class="reserved">infosec</a>,</span><span><a href="/category/#coup de gueule" class="reserved">coup de gueule</a></span>
+    </p>
+  </header>
+
+  <article class="post-content">
+  <p>On me demande assez souvent pourquoi je n’utilise pas Windows comme le reste des communs des mortels, et quand on le fait je me lance dans des discours sur le le logiciel libre et des exposés avec arguments techniques à l’appui pour montrer à quel point GNU/Linux est bien supérieur au système d’exploitation de Microsft. Cela dit, je dois avouer que j’ai rarement convaincu mes interlocuteurs. Mais tout ça va changer je crois, grace à l’argument qui tue que j’ai découvert ce matin en lisant mes <a href="/feed">flux RSS [0]</a>.</p>
+
+<p>Tout à commencer il y a plus d’un an, 16 mois pour être précis, quand Tavis Ormandy, le fameux chercheur en sécurité informatique au sein du <a href="http://googleprojectzero.blogspot.com">Google Project Zero [1]</a>, a découvert une vulnérabilité très critique dans le gestionnaire des mots de passe Keeper. Cette faille permettait à des sites peu scrupuleux de voler les mots de passe via des techniques comme le <a href="https://fr.wikipedia.org/wiki/D%C3%A9tournement_de_clic">clickjacking [2]</a>.</p>
+
+<p>Jusqu’à la rien d’anormal, des bugs et failles dans des logiciels on en voit tous les jours. Mais c’était sans compter sur le génie de Microsft. En effet, le même Travis Ormandy a découvert que l’entreprise a embarqué Keeper dans les récentes versions de Windows 10 !</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>“I recently created a fresh Windows 10 VM with a pristine image from MSDN, and found that a password manager called “Keeper” is now installed by default,”
+</code></pre></div></div>
+
+<p>Pas de bol pour Microsft, la version de Keeper pré-installée dans Windows contient la même vulnérabilité que Travis avait découvert il y a 16 mois. Certains <del>trolls</del> pro-windows vont peut-être dire que ce n’est pas de la faute de Microsft et qu’elle n’est pas l’éditrice du logiciel en question; Pardon mais Microsoft n’est pas un petit geek dans sa chambre qui maintient une distro GNU/Linux, c’est une multinationale avec un budget de plusieurs milliards de dollars, elle pourrait quand même effectuer un audit de sécurité d’un logiciel venant d’une source tiers avant de l’inclure par défaut dans son système d’exploitation, ce n’est pas difficile non ?</p>
+
+<p>Travis Ormandy a remonté la faille aux développeurs de Kepper qui l’ont corrigé en 24 heures, <a href="https://bugs.chromium.org/p/project-zero/issues/detail?id=1481&amp;desc=3">il avait donné un délai de 90 jours avant de rendre les détails du rapport de la faille publique [3]</a>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>I assume this is some bundling deal with Microsoft. I've heard of Keeper, I remember filing a bug a while ago about how they were injecting privileged UI into pages (   issue 917   ). I checked and, they're doing the same thing again with this version. I think I'm being generous considering this a new issue that qualifies for a ninety day disclosure, as I literally just changed the selectors and the same attack works.
+</code></pre></div></div>
+
+<p>Il a de même partagé un proof of concept où l’on voit qu’il a réussi à choper le mot de passe Twitter.</p>
+
+<div>
+	<img src="/images/posts/2017/windows_keeper.png" style="width:75%;" />
+</div>
+<p><br /></p>
+
+<p>Donc pour revenir à mon argument, je ne sais pas pour vous  mais moi je ne ferais pas confiance à une entreprise incapable de faire un code review d’une putaine extension pour navigateur web ! (bon, je sais que les genre n’ont rien à foutre de ça, mais je vais quand même à rêver dans mon coin )</p>
+
+<h3 id="liens">Liens</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0]: /feed
+[1]: http://googleprojectzero.blogspot.com
+[2]: https://fr.wikipedia.org/wiki/D%C3%A9tournement_de_clic
+[3]: https://bugs.chromium.org/p/project-zero/issues/detail?id=1481&amp;desc=3
+</code></pre></div></div>
+
+
+  </article>
+   
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <h1>Sur le même sujet</h1>
+                <ul>
+                
+                <li>
+                    <a href="http://localhost:4000/blog/microsoft-mots-de-passe-toute-une-histoire/">Microsoft et les mots de passe, toute une histoire
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/-blog/script-python-sites-web-meme-adresse-ip/">Un petit script pour récupérer les URLs des sites web hébergés sur la même adresse IP
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/windows-credential-guard-mimikatz/">Windows Credential Guard et Mimikatz
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/meltdown-spectre/">Deux points qui me tracassent à propos de meltdown et spectre
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/full-disclosure-etihad-airways/">Full Disclosure : Des emails et mots de passe de la compagnie aérienne Etihad Airways dans l'air
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/">Comment j'ai pu gagner un accès administrateur sur un serveur Windows 2012 grâce à Google
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+
+	<p class="feed-recomendation">
+		Si vous avez aimé ce billet, vous pouvez vous inscrire au <a href="feed/">flux RSS</a> !
+	</p>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'crowd42s-blog-1';
+    var disqus_config = function () {
+        this.page.identifier = "/blog/gg-microsft/";
+    };
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+  </article>
+
+</div>
+
+            </main>
+          </div>
+        </div>
+
+        <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <footer>
+      Propulsé fièrement par Jekyll!
+    </footer>
+  </div>
+</div>
+
+
+      </div>
+    </body>
+</html>

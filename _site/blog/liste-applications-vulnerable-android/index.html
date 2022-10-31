@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Liste d'applications android vulnérables | crowd42's blog</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="feed/"> 
+
+</head>
+
+
+    <body>
+      <div class="container">
+
+        <header class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1 class="">crowd42's blog</h1>
+    <p>
+    <span class="reserved">char</span> nick[<span class="number">7</span>] = <span class="string">"crowd42"</span>;
+    </p>
+    <p>
+    printf(<a href="https://github.com/crowd42" target="_blank"><span class="string">"https://github.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://mastodon.social/crowd42"
+      target="_blank"><span class="string">"https://mastodon.social/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://keybase.io/crowd42"
+      target="_blank"><span class="string">"https://keybase.io/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+
+     <p>
+    printf(<a href="https://twitter.com/crowd42"
+      target="_blank"><span class="string">"https://twitter.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<span class="string">"<span class="reserved">%s\x40</span>riseup<span class="reserved">\x2e\\\b</span>net<span class="reserved">\n</span>"</span>,nick);
+    </p>
+    <!-- <p>
+            printf(<a href="https://crowd42.github.io" target="_blank"><span class="string">"https://<span class="reserved">%s</span>.github.io<span class="reserved">\n</span>"</span></a>,nick);
+        </p> -->
+    <p>
+    puts(<a href="misc/pubkey.gpg.txt" target="_blank"><span
+        class="string">"0xdc 5a6d b445 976d 60"</span></a>);
+    </p>
+  </div>
+</header>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="menu">
+      <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/blog/">blog</a></li>
+          <li> <a href="/astuces/">astuces</a></li>
+          <li><a href="/books/">books</a></li>
+          <li><a href="/casts">*casts</a></li>
+          <li><a href="/movies">movies</a></li>
+          <li><a href="/talks">talks</a></li>
+          <li><a href="/zines">*zines</a></li>
+          <li><a href="/ressources">ressources</a></li>
+          <li><a href="/feed">feed</a></li>
+          <li><a href="https://liberapay.com/~29921/donate">donate</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <main>
+            <div class="post">
+
+  <header class="post-header">
+    <h1>Liste d'applications android vulnérables</h1>
+  </header>
+
+  <article class="post-content">
+  <div class="post">
+
+  <header class="post-header">
+    <p class="meta">
+        Dec 1, 2016
+        
+        
+        •
+        <span><a href="/category/#infosec" class="reserved">infosec</a>,</span><span><a href="/category/#penetration testing" class="reserved">penetration testing</a>,</span><span><a href="/category/#hacking" class="reserved">hacking</a>,</span><span><a href="/category/#android" class="reserved">android</a></span>
+    </p>
+  </header>
+
+  <article class="post-content">
+  <p>C’est quoi le point commun entre la mécanique et l’infosec (penetetration
+        testing plus précisement) ? Réponse : vous pouvez lire tout les bouquins
+du monde, voir toutes les vidéos du web, si vous ne mettez pas les mains de dans
+le cambouie, je peux vous garantir que vous n’irez pas loin. Pratique pratique
+pratique, c’est le mot clé. Vous voulez souhaitez apprendre comment fonctionne
+et exploiter les vulnérabilités de type buffer overflow ? Installez une des
+nombreuses VM qui existent et appliquez ce que vous avez lu, idem pour SQLI,
+           XSS etc.</p>
+
+<p>Dans ce billet je vous présenterai quelques applications pour vous familiariser
+avec la sécurité des mobiles, j’essaierai dans des prochains posts de vous lister
+quelques unes autres.</p>
+
+<p><a href="https://github.com/logicalhacking/DVHMA">Damn Vulnerable Hybrid Mobile Application [0]</a></p>
+
+<p><a href="https://github.com/CyberScions/Digitalbank">Android Digital Bank [1]</a></p>
+
+<p><a href="https://github.com/payatu/diva-android">Damn Insecure and Vulnerable Application [2]</a></p>
+
+<p><a href="http://www.mcafee.com/us/downloads/free-tools/hacme-bank-android.aspx">Hackme Bank [3]</a></p>
+
+<p><a href="https://github.com/dineshshetty/Android-InsecureBankv2">Insecure Bank [4]</a></p>
+
+<p><a href="https://code.google.com/archive/p/dvaa/">Damn Vulnerable Android Application [5]</a></p>
+
+<p><a href="https://github.com/jackMannino/OWASP-GoatDroid-Project">OWASP GoatDroid [6]</a></p>
+
+<p><a href="https://github.com/CSPF-Founder/DodoVulnerableBank">Dodo Vulnerable Bank [7]</a></p>
+
+<p><a href="https://github.com/dan7800/VulnerableAndroidAppOracle">Vulnerable Android Application [8]</a></p>
+
+<p><a href="http://urdusecurity.blogspot.co.uk/2014/08/Exploiting-debuggable-android-apps.html">Urdu Vulnerable Application [9]</a></p>
+
+<p><a href="https://dl.dropboxusercontent.com/u/37776965/Work/MoshZuk.apk">MoshZuk [10]</a></p>
+
+<p><a href="https://github.com/appknox/vulnerable-application">AppKnox Vulnerable Application [11]</a></p>
+
+<p><a href="https://github.com/Lance0312/VulnApp">Vulnerable Android Application [12]</a></p>
+
+<p><a href="https://github.com/SecurityCompass/AndroidLabs">Android Security Labs [13]</a></p>
+
+<h3 id="liens">Liens</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0]: https://github.com/logicalhacking/DVHMA
+[1]: https://github.com/CyberScions/Digitalbank
+[2]: https://github.com/payatu/diva-android
+[3]: http://www.mcafee.com/us/downloads/free-tools/hacme-bank-android.aspx
+[4]; https://github.com/dineshshetty/Android-InsecureBankv2
+[5]: https://code.google.com/archive/p/dvaa/
+[6]: https://github.com/jackMannino/OWASP-GoatDroid-Project
+[7]: https://github.com/CSPF-Founder/DodoVulnerableBank
+[8]: https://github.com/dan7800/VulnerableAndroidAppOracle
+[9]: http://urdusecurity.blogspot.co.uk/2014/08/Exploiting-debuggable-android-apps.html
+[10]: https://dl.dropboxusercontent.com/u/37776965/Work/MoshZuk.apk
+[11]: https://github.com/appknox/vulnerable-application
+[12]: https://github.com/Lance0312/VulnApp
+[13]: https://github.com/SecurityCompass/AndroidLabs
+</code></pre></div></div>
+
+  </article>
+   
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <h1>Sur le même sujet</h1>
+                <ul>
+                
+                <li>
+                    <a href="http://localhost:4000/blog/microsoft-mots-de-passe-toute-une-histoire/">Microsoft et les mots de passe, toute une histoire
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/-blog/script-python-sites-web-meme-adresse-ip/">Un petit script pour récupérer les URLs des sites web hébergés sur la même adresse IP
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/windows-credential-guard-mimikatz/">Windows Credential Guard et Mimikatz
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/meltdown-spectre/">Deux points qui me tracassent à propos de meltdown et spectre
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/full-disclosure-etihad-airways/">Full Disclosure : Des emails et mots de passe de la compagnie aérienne Etihad Airways dans l'air
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/">Comment j'ai pu gagner un accès administrateur sur un serveur Windows 2012 grâce à Google
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+
+	<p class="feed-recomendation">
+		Si vous avez aimé ce billet, vous pouvez vous inscrire au <a href="feed/">flux RSS</a> !
+	</p>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'crowd42s-blog-1';
+    var disqus_config = function () {
+        this.page.identifier = "/blog/liste-applications-vulnerable-android/";
+    };
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+  </article>
+
+</div>
+
+            </main>
+          </div>
+        </div>
+
+        <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <footer>
+      Propulsé fièrement par Jekyll!
+    </footer>
+  </div>
+</div>
+
+
+      </div>
+    </body>
+</html>

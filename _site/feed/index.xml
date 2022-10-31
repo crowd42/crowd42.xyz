@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crowd42&apos;s blog</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 31 Oct 2022 20:43:19 +0100</pubDate>
+    <lastBuildDate>Mon, 31 Oct 2022 20:43:19 +0100</lastBuildDate>
+    <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Une liste des podcasts python</title>
+        <description>&lt;p&gt;Je suis un grand consommateur des podcasts de toute sorte : sécurité informatique, histoire, sociologie… Dès que j’en trouve un je l’ajoute à mon lecteur gpodder et même si l’auteur du podcast a cessé de publier des nouveaux épisodes, je l’ajoute quand même et je te télécharge les archives des années précédentes. Une habitude que je ne regrette pas car elle m’a permis d’apprendre énormément en écoutant ces podcasts. Et si je n’ai pas à me plaindre de l’offre des podcasts infosec que ce soit au niveau qualitatif que quantitatif, malheureusement je ne peux pas en dire autant pour ceux consacrés à python. Il y a très peu de podcasts dédiés à ce merveilleux langage de programmation, c’est pourquoi j’ai pensé que ce sera peut-être utile aux autres si je partageais avec vous ceux que j’ai écoute.&lt;/p&gt;
+
+&lt;h3 id=&quot;talk-python-to-me&quot;&gt;Talk Python To Me&lt;/h3&gt;
+&lt;p&gt;C’est sans aucun doute le meilleur podcast python qui existe à mon humble avis, non seulement par les sujets qu’il aborde durant les, plus au moins, 60 minutes que dure le podcast mais aussi par la qualité des invités des épisodes : Kenneth Reith (aka Monsieur Requests, Records, Clint, Python-Guide, HTTP-Bin, Autoenv…), Armin Ronacher (l’auteur de du framework web Flask), Guido van Rossum lui même (épisode 100) pour ne citer qu’eux.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://talkpython.fm/episodes/rss&quot;&gt;Flux RSS du podcast [0]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gpodder.net/podcast/talk-python-to-me-python-conversations-for-passionate-developers-3&quot;&gt;La page du podcast sur gpodder.net [1]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;import-this-a-python-podcast-for-humans&quot;&gt;Import This: A Python Podcast For Humans&lt;/h3&gt;
+&lt;p&gt;Je pense que les gens qui intéressent au python ont pu deviner qui est l’auteur de ce podcast, oui c’est bien Kenneth Reitz. Je l’aime bien personnellement bien qu’il ne soit pas toujours question de python ou même de programation dans les épisodes et que ces derniers ne sont pas diffusés régulièrement, chose tout à fait compréhensible quand on voit le nombre de projets initiés par Kennith en plus de son poste au sein de Heroku.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://feeds.soundcloud.com/users/soundcloud:users:82237854/sounds.rss&quot;&gt;Flux RSS du podcast [2]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kennethreitz.org/import-this/&quot;&gt;Page web du podcast [3]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;test--code&quot;&gt;Test &amp;amp; Code&lt;/h3&gt;
+&lt;p&gt;Ce podcast est un peu différent de tous ceux cités dans ce billet, car tous les épisodes ont un point commun (en plus de Python bien évidemment), ils se focalisent sur une seule phase du cycle de développement : le test. C’est sans un aucun doute le podcast où j’ai le plus appris.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://testandcode.com/rss&quot;&gt;Flux RSS du podcast [4]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://testandcode.com/&quot;&gt;Site web du podcast [5]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gpodder.net/podcast/test-and-code&quot;&gt;La page du podcast sur gpodder.net [6 ]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;podcastinitpython&quot;&gt;Podcast.&lt;strong&gt;init&lt;/strong&gt;(‘Python’)&lt;/h3&gt;
+&lt;p&gt;Encore un excellent podcast dont je ne rate aucun épisode. Il a été lancé au même moment que Talk Python To Me, d’ailleurs l’animateur de ce dernier a été l’invité d’un des épisodes, tout comme Kenneth Reitz (je me suis toujours demandé comment Kenneth arrive à gérer son temps !) .&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.podcastinit.com/feed/mp3/&quot;&gt;Flux RSS du podcast [7]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gpodder.net/podcast/import-this-4&quot;&gt;La page du podcast sur gpodder.net [8]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;python-bytes&quot;&gt;Python Bytes&lt;/h3&gt;
+&lt;p&gt;Michael Kennedy, l’animateur de Talk Python To Me, et Brian Okken, l’animateur de Test&amp;amp;Code se sont associés pour produire Python Bytes. C’est un podcast hebdomadaire qui est consacré 100% à l’actualité du python, chaque épisode, chacun des deux animateurs choisit des articles qui l’ont marqué et les deux les discutent ensemble.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pythonbytes.fm/&quot;&gt;Flux RSS du podcast [9]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gpodder.net/podcast/python-bytes&quot;&gt;La page du podcast sur gpodder.net [10]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;J’ai exclu un podcast (The python experience) de cette liste car il est semble que son flux RSS est cassé, si vous arrivez à en trouver un autre URL je suis preneur. D’ailleurs je suis preneur de tout autre podcast sur python, vous pouvez me le(s) communiquer ici par commentaire, par email ou encore sur Mastodon.&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/309118827&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=false&amp;amp;show_user=true&amp;amp;show_reposts=false&quot;&gt;
+&lt;/iframe&gt;
+
+&lt;h3 id=&quot;liens&quot;&gt;Liens&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0]: https://talkpython.fm/episodes/rss
+[1]: https://gpodder.net/podcast/talk-python-to-me-python-conversations-for-passionate-developers-3 
+[2]: http://feeds.soundcloud.com/users/soundcloud:users:82237854/sounds.rss
+[3]: https://www.kennethreitz.org/import-this/
+[4]: http://testandcode.com/rss
+[5]: http://testandcode.com/
+[6]: https://gpodder.net/podcast/test-and-code
+[7]: http://www.podcastinit.com/feed/mp3/
+[8]: https://gpodder.net/podcast/import-this-4
+[9]: https://pythonbytes.fm/
+[10]: https://gpodder.net/podcast/python-bytes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 07 Feb 2018 17:20:54 +0000</pubDate>
+        <link>http://localhost:4000/blog/liste-podcasts-python/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/liste-podcasts-python/</guid>
+        
+        <category>python</category>
+        
+        <category>podcast</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Microsoft et les mots de passe, toute une histoire</title>
+        <description>&lt;p&gt;Je ne sais pas si vous vous souvenez de ça, mais jusqu’à il y a quelques années (trois ou quatre je crois) lorsqu’on voulait s’inscrire sur Hotmail/Outlook et qu’on choisissait un mot de pas qui dépassait les 16 caractères, un message d’erreur s’affichait et nous inviter à choisir un mot de passe moins long. On aurait pensé que lorsque Microsoft a abandonné cette pratique, elle aurait adopté celles recommandées par tous les acteurs du monde de la sécurité informatique, et bien non, c’était sans compte sur le génie de cette entreprises qui ne cessera jamais de nous surprendre !&lt;/p&gt;
+
+&lt;p&gt;En effet, il y a quelques jours, j’ai voulu créer un compte sur le site des services “cloud” de Microsoft, j’ai ouvert donc KeePass et j’ai créé une nouvelle entrée pour Azure, j’ai ensuite copier le mot de passe que j’ai généré et je l’ai collé dans le champ qui est lui réservé dans le formulaire d’inscription et là surprise :&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img src=&quot;/images/posts/2018/inscription-microsoft.png&quot; style=&quot;width:75%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Oui vous avez bien lu/vu, en 2018 il y a encore une grande entreprise  comme Microsoft qui interdit l’usage des caractères spéciaux dans les mots de passe…&lt;/p&gt;
+
+&lt;p&gt;Donc si par miracle quelqu’un de chez Microsoft passe par ici, voilà un petit rappel des règles qu’il faut choisir quand on veut créer un bon mot de passe :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Choisir des mots de passe difficiles à deviner ;&lt;/li&gt;
+  &lt;li&gt;Toujours utiliser des combinaisons des lettres minuscules et majuscules, des chiffres et des caractères spéciaux ;&lt;/li&gt;
+  &lt;li&gt;Un mot de passe doit être unique, c’est à dire éviter d’utiliser le même pour plusieurs sites/services ;&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mais je pense que les gens de Microsoft savent déjà ça, ils ne sont pas aussi que ça, non ?&lt;/p&gt;
+
+&lt;p&gt;P.S : Si vraiment quelqu’un de Microsoft, ou n’importe qui a un élément de réponse, j’aimerais  bien qu’on m’explique pourquoi ils autorisent pas les caractères spéciaux dans leurs mots de passe.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 21 Jan 2018 13:05:08 +0000</pubDate>
+        <link>http://localhost:4000/blog/microsoft-mots-de-passe-toute-une-histoire/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/microsoft-mots-de-passe-toute-une-histoire/</guid>
+        
+        <category>Microsoft</category>
+        
+        <category>infosec</category>
+        
+        <category>mots de passe</category>
+        
+        <category>password</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Un petit script pour récupérer les URLs des sites web hébergés sur la même adresse IP</title>
+        <description>&lt;p&gt;Dans un de mes derniers articles (&lt;a href=&quot;https://crowd42.github.io/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/&quot;&gt;Comment j’ai pu gagner un accès administrateur sur un serveur Windows 2012 grâce à Google [0]&lt;/a&gt;), j’ai évoqué comment j’ai utilisé le moteur de recherche de Microsoft afin de trouver les sites web qui sont hébergés sur le même serveur web d’un client lors d’un test d’intrusion.&lt;/p&gt;
+
+&lt;p&gt;Pour ceux qui ont la flemme d’aller jeter un coup d’œil à l’article en question, on peut obtenir ces sites web en laçant la requête suivante :&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ip: 93.184.216.34 (l&apos;adresse IP du site example.com)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans les cas où les résultats ne dépassent pas cinq voire même un peu plus, ça reste gérable, on peut copier et coller les urls dans un fichier pour les utiliser plus tard. Cependant, si on est face à plus d’une dizaine d’urls, le copier/coller devient beaucoup moins pratique et très fatiguant. C’est la raison pour laquelle j’avais écrit un script python pour automatiser cette tâche.&lt;/p&gt;
+
+&lt;p&gt;C’est un script python très banal et je suis quasiment certain que si j’avais pris le temps de le chercher sur le web, j’aurais surement trouvé une meilleure version que la mienne, mais voilà, j’en avais besoin et je l’ai écrit.&lt;/p&gt;
+
+&lt;p&gt;Pour utiliser ce script vous aurez besoin de vous enregistrer sur le site des &lt;a href=&quot;https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/&quot;&gt;services Azure de Microsoft [1]&lt;/a&gt; pour obtenir votre clé API (je pense que je vais réaliser une deuxième version de ce script en utilisant &lt;a href=&quot;https://github.com/requests/requests&quot;&gt;requests [2]&lt;/a&gt; et &lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/#HallOfFame&quot;&gt;BeautifulSoup [3]&lt;/a&gt; afin d’éviter l’inscription chez Microsoft).&lt;/p&gt;
+
+&lt;p&gt;Son utilisation est très simple :&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;usage: ip_bing.py [-h] [-i IP] [-c COUNT] [-f FILE] [-o OFFSET]
+
+Find websites hosted on the same IP address
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i IP, --ip IP        The IP address of the web server
+  -c COUNT, --count COUNT
+                        Number of results to return
+  -f FILE, --file FILE  Save the output into a text file
+  -o OFFSET, --offset OFFSET
+                        start in results number x, default: 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Par défaut le script ne va afficher que les dix premièrs résultats :&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python ip_bing.py -i  93.184.216.34
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour obtenir plus de résultat utilisez l’argument -c (–count) :&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python ip_bing.py -i  93.184.216.34 -c 40
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Avec cette commande, vous obtiendrez les premiers 40 résultats, à condition bien évidemment que le moteur de recherche trouve 40 résultats ou plus.&lt;/p&gt;
+
+&lt;p&gt;Vous pouvez aussi spécifier la page par laquelle vous souhaitez commencer :&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python ip_bing.py -i  93.184.216.34 -c 20 -o 30
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans l’exemple ci-dessus ip_bing va récupérer les vingts premiers résultat mais à partir de la quatrième page.&lt;/p&gt;
+
+&lt;p&gt;Enfin pour sauvegardé les urls dans un fichier ajouter l’argument -f à votre commande :&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python ip_bing.py -i  93.184.216.34 -c 20 -o 30 -f urls_example_com.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Voilà ci-dessous le script en question, faites en ce que vous voulez :-)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;argparse&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;requests&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# ip_bing take 3 arguments, the last two are optional
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argparse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ArgumentParser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Find websites hosted on the same IP address&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;-i&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;--ip&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The IP address of the web server&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;-c&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;--count&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Number of results to return&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;-f&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;--file&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Save the output into a text file&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&apos;-o&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&apos;--offset&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;start in results number x, default: 0&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print_help&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Subscription key which provides access to this API.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Ocp-Apim-Subscription-Key&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;PASE_YOUR_KEY_HERE&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Request URL
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://api.cognitive.microsoft.com/bing/v7.0/search&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# The keyword (dork) to pass to bing
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keyword&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;ip:&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ip&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;payloads&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;q&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;keyword&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;count&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;offset&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;offset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;payloads&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Get the response as json content
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;webPages&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;value&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;url&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# We also the save output as file in the current directory, so we can use
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# later with other programs for example
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;url&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;liens&quot;&gt;Liens&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[0]: https://crowd42.github.io/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/
+[1]: https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/
+[2]: https://github.com/requests/requests
+[3]: https://www.crummy.com/software/BeautifulSoup/#HallOfFame
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 16 Jan 2018 19:30:10 +0000</pubDate>
+        <link>http://localhost:4000/-blog/script-python-sites-web-meme-adresse-ip/</link>
+        <guid isPermaLink="true">http://localhost:4000/-blog/script-python-sites-web-meme-adresse-ip/</guid>
+        
+        <category>infosec</category>
+        
+        <category>python</category>
+        
+        <category>bing</category>
+        
+        <category>osint</category>
+        
+        <category>pentest</category>
+        
+        
+        <category>-blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Windows Credential Guard et Mimikatz</title>
+        <description>&lt;p&gt;Demandez à n’importe quel penetration tester son top 10 des outils dont il ne peut pas s’en passer et vous aurez de fortes chances de voir &lt;a href=&quot;https://github.com/gentilkiwi/mimikatz&quot;&gt;Mimikatz [0]&lt;/a&gt; figurez dans le haut de son classement. C’est un outil extrêmement qui permet entre autres l’extraction des mots de passe d’un système d’exploitation Windows, de récupérer les mots de passe en clair ou l’injection des bibliothèques, les certificats ainsi que leurs clés privées, etc.&lt;/p&gt;
+
+&lt;p&gt;Afin de mitiger les risques que posent ce genre de logiciels, Microsoft a introduit une nouvelle fonctionnalité dans Windows 10 et Windows Server 2016 : &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard&quot;&gt;Credential Guard [1]&lt;/a&gt;. Cette fonctionnalité permet de stocker les secrets dans un environnement protégé et isolé, inaccessible pour l’utilisateur normal.&lt;/p&gt;
+
+&lt;p&gt;Credential Guard s’appuie sur la technologie &lt;a href=&quot;http://woshub.com/virtual-secure-mode-vsm-in-windows-10-enterprise/&quot;&gt;Virtual Secure Mode [\2]&lt;/a&gt; (Sécurité basée sur la virtualisation). Cette dernière se base sur les fonctionnalités de virtualisation qu’offrent les nouveaux CPU. La combinaison des deux permet d’offrir un espace mémoire isolé pour stocké les secrets et qui ne sont pas accessibles au reste du système d’exploitation, en d’autres mots, l’espace mémoire isolé est protégé contre les tentatives de lecture et écriture de la part des autres processus de l’espace mémoire normal utilisé par le système d’exploitation. Pour mieux comprendre comment fonctionne Credential Guard &lt;a href=&quot;https://blogs.technet.microsoft.com/ash/2016/03/02/windows-10-device-guard-and-credential-guard-demystified/&quot;&gt;je vous invite à lire cet article [3]&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe src=&quot;https://mva.microsoft.com/en-US/training-courses-embed/deep-dive-into-credential-guard-16651/Video-Credential-Theft-Lateral-Traversal-cfGBPlIyC_9404300474&quot; width=&quot;636&quot; height=&quot;480&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Credential Guard est un excellent moyen de se défendre contre des outils comme Mimikatz qui permettent d’extraire les hashs pour exécuter des attaques de type &lt;a href=&quot;https://en.wikipedia.org/wiki/Pass_the_hash&quot;&gt;pass the hash [4]&lt;/a&gt;, tant que l’attaquant ne dispose des droits administrateurs (&lt;a href=&quot;https://crowd42.github.io/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/&quot;&gt;des droits qu’on peut obtenir plus facilement que vous pouviez l’imaginer [5]&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Un des moyens par lesquels Windows gère le processus d’authentification des utilisateurs est &lt;a href=&quot;https://en.wikipedia.org/wiki/Security_Support_Provider_Interface&quot;&gt;Architecture de l’interface du fournisseur (Security Support Provider) SSP [6]&lt;/a&gt;, par défaut Windows embarque de nombreux modules (NTLM, Kerberos…), mais il est possible d’installer ses propres modules SSP.&lt;/p&gt;
+
+&lt;p&gt;Et c’est là que (r)entre en action Mimikatz. En effet ce dernier a dans son arsenal un module SSP (memssp) qui une fois exécuté va être appelé à chaque fois un utilisateur va ouvrir une session et il sauvegardera les identifiants et les mots de passe dans un fichier (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\Windows\System32\mimilsa.log&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;D’abord il faut exécuter mimikatz avec en tant qu’administrateur, ensuite il faut activer le mode &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;debug privilege &lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mimikatz # privilege::debug
+Privilege 20 &apos;ok&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;img src=&quot;/images/posts/2018/mimikatz_debug.png&quot; style=&quot;width:75%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Puis on injecte le module memssp avec cette commande :&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mimikatz # misc::memssp
+Injected =&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Maintenant préparez vous un café et attendez que des utilisateurs se connectent à la machine, dès qu’un deux va le faire, Mimikatz va intercepter son mot de passe et va l’enregistrer dans le fichier mimilsa.log, vous pouvez consulter ce fichier en l’éditant avec notepad ou en tapant la commande suivante :&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS C:\Windows\System32&amp;gt; type .\mimilsa.log
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div&gt;
+	&lt;img src=&quot;/images/posts/2018/mimikatz_ssp.png&quot; style=&quot;width:85%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+Sympa non ? C’est à la fois une des limites de Credential Guard et points forts de Mimikatz et explique pourquoi cet outil est si populaire parmi les pentester :-).&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img src=&quot;/images/posts/2018/34134313-2658eb0e-e45a-11e7-9ded-0229b6da174a.gif&quot; style=&quot;width:85%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;liens&quot;&gt;Liens&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[0]: https://github.com/gentilkiwi/mimikatz
+[1]: https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard
+[2]: http://woshub.com/virtual-secure-mode-vsm-in-windows-10-enterprise/
+[3]: https://blogs.technet.microsoft.com/ash/2016/03/02/windows-10-device-guard-and-credential-guard-demystified/
+[4]: https://en.wikipedia.org/wiki/Pass_the_hash
+[5]: https://crowd42.github.io/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/
+[6]:https://en.wikipedia.org/wiki/Security_Support_Provider_Interface
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 11 Jan 2018 04:23:12 +0000</pubDate>
+        <link>http://localhost:4000/blog/windows-credential-guard-mimikatz/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/windows-credential-guard-mimikatz/</guid>
+        
+        <category>infosec</category>
+        
+        <category>mimikatz</category>
+        
+        <category>windows</category>
+        
+        <category>windows credential guard</category>
+        
+        <category>pentest</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Deux points qui me tracassent à propos de meltdown et spectre</title>
+        <description>&lt;p&gt;À moins que vous viviez dans une caverne en plein désert, sans Internet, téléphone, télé ou journaux, vous avez alors surement entendu parler depuis avant hier de &lt;a href=&quot;https://meltdownattack.com/&quot;&gt;Meltdown [0]&lt;/a&gt; et &lt;a href=&quot;https://spectreattack.com/&quot;&gt;Spectre [1]&lt;/a&gt;, les deux vulnérabilités qui affectent &lt;a href=&quot;https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00088&amp;amp;languageid=en-fr&quot;&gt;tous les processeurs d’Intel produits pendant les deux dernières décennies (depuis 1995 pour être exact) [2]&lt;/a&gt; ainsi que quelques modèles de ARM (AMD ?). Je ne vais tenter de vous expliquer les détails techniques de ces deux failles, d’abord parce que d’autres personnes plus compétentes que moi l’ont déjà fait et ensuite parce que ce n’est pas le sujet de ce billet.&lt;/p&gt;
+
+&lt;p&gt;Depuis hier c’est surtout ces deux questions que je me pose sans cesse :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Les deux vulnérabilités ont été remonté à Intel depuis début Juin, donc pendant six mois, l’entreprise a continué à nous fourguer des processeurs qu’elle savait déjà que leur sécurité a été compromise ! Et idem pour les fabricants des ordinateurs, est-ce que Intel les a mis au courant de son fiasco ? Ou a-t-elle gardé l’information pour elle ? Dans les deux cas nous, les consommateurs, on a bien entubé (pour rester poli).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.nasdaq.com/symbol/intc&quot;&gt;Le cours d’Intel dans la bourse (Nasdaq) a chuté de 1,83% [3]&lt;/a&gt;, ce qui est compréhensible et tout à fait normal dans des situations pareilles, mais dans quelques semaines/mois, quand Intel va commencer à nous vendre ses nouveaux processeurs ultra sécurisés, rapides et performants à coup de centaines de dollars, non seulement elle va bien se remplir les poches sur le dos des consommateurs, mais le cours de son action va surement monter en flèche dans la bourse boosté par les ventes qu’il va réaliser, donc encore plus de fric dans ses comptes en banques.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Elle est pas belle la vie ?&lt;/p&gt;
+
+&lt;p&gt;P.S : Si vous voulez en savoir plus sur les deux vulnérabilités, &lt;a href=&quot;https://www.theguardian.com/technology/2018/jan/04/meltdown-spectre-computer-processor-intel-security-flaws-explainer&quot;&gt;The Guardian a publié un article a publié un article qui les explique sans rentrer dans les détails techniques [4]&lt;/a&gt;, sinon, y a l’article de &lt;a href=&quot;http://www.theregister.co.uk/2018/01/04/intel_amd_arm_cpu_vulnerability/&quot;&gt;The Register qui donne des explications techniques des deux failles [5]&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;liens&quot;&gt;Liens&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[0]: https://meltdownattack.com/
+[1]: https://spectreattack.com/
+[2]: https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00088&amp;amp;languageid=en-fr
+[3]: http://www.nasdaq.com/symbol/intc
+[4]: https://www.theguardian.com/technology/2018/jan/04/meltdown-spectre-computer-processor-intel-security-flaws-explainer
+[5]: http://www.theregister.co.uk/2018/01/04/intel_amd_arm_cpu_vulnerability/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 05 Jan 2018 00:01:00 +0000</pubDate>
+        <link>http://localhost:4000/blog/meltdown-spectre/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/meltdown-spectre/</guid>
+        
+        <category>infosec</category>
+        
+        <category>Intel</category>
+        
+        <category>meltdown</category>
+        
+        <category>spectre</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Full Disclosure : Des emails et mots de passe de la compagnie aérienne Etihad Airways dans l&apos;air</title>
+        <description>&lt;p&gt;Il y a près de deux mois, je discutais avec &lt;a href=&quot;https://soc.ialis.me/@href&quot;&gt;@href [0]&lt;/a&gt; un sujet dont je me rappelle plus les détails (désolé, on va mettre ça sur le dos de la vieillesse et la mémoire qui commence à flancher), tout ce dont je me rappelle c’est que ça parlait d’emailing et de &lt;a href=&quot;https://fr.wikipedia.org/wiki/Web_scraping&quot;&gt;web scraping [1]&lt;/a&gt; (ou pas, je ne me rappelle vraiment pas). Parce que juste après je me suis lancé dans l’écriture d’un script python (tout pourri je dois avouer) qui prenait comme argument un &lt;a href=&quot;https://fr.wikipedia.org/wiki/Google_hacking&quot;&gt;Google dork [2]&lt;/a&gt; :&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python email_harvester.py -d &quot;site:.com +@ gmail.com|yahoo.com&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Le but était de voir combien d’adresse email je pouvais collecter en une heure. Le script n’avait rien de spécial, il cherchait des fichiers sur le web qui contenaient des adresses email et les sauvegarder dans un répertoire. Le script affichait aussi les liens en cours de traitement. Sauf qu’à la première exécution du script, j’ai remarqué un nom de domaine qui m’a obligé à arrêter le programme : &lt;a href=&quot;http://etihadmediacentre.com&quot;&gt;etihadmediacentre.com&lt;/a&gt;. Pour ceux qui ne le savent Etihad est une compagnie aérienne émaratie, elle est dans le top 3 des plus grandes/meilleures compagnies aériennes au monde. Pourquoi j’ai arrêté le script ? Le petit bout de code va vous donner élément de réponse :&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Filter-out unrelated links and extract actual URL from Google&apos;s.
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;href&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;startswith&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;/url?&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;href&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;startswith&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;s&quot;&gt;&quot;/url?q=http://webcache.googleusercontent.com&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;extract&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;findall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;q=(.*\.sql)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;href&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;extract&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;get_emails&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Vous l’avez remarquer le “*.sql” ? Ce bout bout du script va s’assurer de ne traiter que les liens avec l’extension .sql (des dumps sql) et le lien que j’ai vu dans mon terminal était un dump d’Etihad !&lt;/p&gt;
+
+&lt;p&gt;J’ai ouvert le site web dans mon navigateur et fait un whois du nom de domaine pour m’assurer que c’était bien un site web appartenant un à la compagnie aérienne Etihad Airways et non pas site web appartenant à des phishers comme je l’ai pensé pendant un petit moment de doute. Mon action suivante était d’aller vers la page qui contenait le dump sql :&lt;/p&gt;
+&lt;div&gt;
+    &lt;img src=&quot;/images/posts/2017/etihad_sql.png&quot; style=&quot;width:75%&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si vous aviez bien regardé l’image, vous devriez avoir remarqué deux choses :&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;L’archive a été mis en ligne le 24 juillet 2017, il est donc très récent et les informations qu’il doit contenir sont probablement à leur tour très récentes ;&lt;/li&gt;
+  &lt;li&gt;La taille du dump est assez conséquente, plus de 600Mo quand même.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;J’ai téléchargé le dump sql ainsi que l’archive tar, légalement parlant ce n’est pas répréhensible, tout ce que j’ai fait c’est d’accéder à des fichiers disponible publiquement (même si le juge de l’affaire bluetouff pense différemment). Ensuite j’ai exporté le dump sql vers un serveur mysql pour les examiner.&lt;/p&gt;
+
+&lt;p&gt;Deux tables ont attiré mon attentions : root_users et users, j’ouvre la première je copie un hash d’un mot de passe pour l’identifier avec &lt;a href=&quot;https://fr.wikipedia.org/wiki/Google_hacking&quot;&gt;hash-identifier [2]&lt;/a&gt; :&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   #########################################################################
+   #     __  __                     __           ______    _____           #
+   #    /\ \/\ \                   /\ \         /\__  _\  /\  _ `\         #
+   #    \ \ \_\ \     __      ____ \ \ \___     \/_/\ \/  \ \ \/\ \        #
+   #     \ \  _  \  /&apos;__`\   / ,__\ \ \  _ `\      \ \ \   \ \ \ \ \       #
+   #      \ \ \ \ \/\ \_\ \_/\__, `\ \ \ \ \ \      \_\ \__ \ \ \_\ \      #
+   #       \ \_\ \_\ \___ \_\/\____/  \ \_\ \_\     /\_____\ \ \____/      #
+   #        \/_/\/_/\/__/\/_/\/___/    \/_/\/_/     \/_____/  \/___/  v1.1 #
+   #                                                             By Zion3R #
+   #                                                    www.Blackploit.com #
+   #                                                   Root@Blackploit.com #
+   #########################################################################
+
+   -------------------------------------------------------------------------
+   HASH: fc36a188c2e9554f0c19bf28520ec187
+   Possible Hashs:
+[+]  MD5
+[+]  Domain Cached Credentials - MD4(MD4(($pass)).(strtolower($username)))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Du MD5, à ce moment là j’espérais pour eux qu’aucun script kiddie n’ait découvert ce dump. Je vérifie quelques tables pour voir la dernière activité enregistré dans la base de données, même date que celle de la mise en ligne du dump sql. Ça commence à devenir chaud pour eux.&lt;/p&gt;
+
+&lt;p&gt;J’ai récupéré quelques adresses emails des gens qui travaillent pour Etihad Airways et Four Communication (la boite qui a développé le site web et qui gère leurs communications) depuis la base de données, et je leurs envoyais un email qui explique la situation et le risque qu’ils encourent. Dans ma naïveté, je me suis attendu à un message de retour d’eux au bout de 48 heures maximum ! C’était il y a presque deux mois et toujours aucune réponse.&lt;/p&gt;
+
+&lt;p&gt;Après plusieurs semaines sans réponse, j’ai décidé de leur passer un message via le programme “Disclosure Assistance” de &lt;a href=&quot;https://www.hackerone.com/&quot;&gt;HackerOne [3]&lt;/a&gt;. Quelques heures après l’avoir fait, j’ai reçu un email de leur part (hackerOne pas Etihad) me confirmant la “légitimité” de ma découverte.&lt;/p&gt;
+
+&lt;div&gt;
+    &lt;img src=&quot;/images/posts/2017/hackerone.png&quot; style=&quot;width:75%&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Encore une fois, naïf que je suis, j’ai pensé que la réputation de HackerOne allait les pousser à se bouger le c** et supprimer le dump sql, c’était il y a plus d’un mois.&lt;/p&gt;
+
+&lt;p&gt;Le risque qu’ils encourent est grand, ça m’a pris quelques minutes pour déchiffrer les mots de passe. Je vous laisse imaginer combien parmi les employés d’Etihad et Four Coummunication utilisent le même mot de passe pour plusieurs services. Mais ce n’est pas tout, les informations sur les employés d’Etihad Airways présentes dans la base de données sont une mine d’or pour un phisher : fonction dans l’entreprise, parfois même adresse et numéro de téléphone et bien évidemment leurs emails professionnels, imaginez les dégâts que ça peut faire si quelqu’un décide de lancer une campagne de phishing en spoofant les adresses emails présentes dans le dump.&lt;/p&gt;
+
+&lt;p&gt;Certains d’entre vous sont surement en train de se dire mais pourquoi alors je divulgue tout ça si c’est aussi risqué que ça ? Et bien tout simplement parce que j’en ai assez de ces entreprises, administrations publiques, etc qui s’en foutent de la sécurité de leurs sites web, applications, serveurs… Durant les dernières années je dois au moins avoir rapporté des failles chez une une bonne centaines d’entreprises et administrations, je peux vous assurer que le pourcentage de ceux qui m’ont répondu ne dépassent pas les 2%. Imaginez ma frustration quand je voyais des sites des universités, ministères, entreprises se faire piraté alors que j’avais remonté les mêmes failles qui ont permet ce piratage il y a plusieurs mois auparavant.&lt;/p&gt;
+
+&lt;p&gt;Donc dorénavant, ce sera &lt;a href=&quot;https://fr.wikipedia.org/wiki/Full_disclosure&quot;&gt;full-disclsure [4]&lt;/a&gt; dès que je découvre une faille et à eux de se démerder après.&lt;/p&gt;
+
+&lt;h3 id=&quot;liens&quot;&gt;Liens&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[0]: https://soc.ialis.me/@href
+[1]: https://fr.wikipedia.org/wiki/Web_scraping
+[2]: https://fr.wikipedia.org/wiki/Google_hacking
+[3]: https://www.hackerone.com/
+[4]: https://fr.wikipedia.org/wiki/Full_disclosure
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 28 Dec 2017 01:01:01 +0000</pubDate>
+        <link>http://localhost:4000/blog/full-disclosure-etihad-airways/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/full-disclosure-etihad-airways/</guid>
+        
+        <category>infosec</category>
+        
+        <category>brèche</category>
+        
+        <category>leak</category>
+        
+        <category>etihad</category>
+        
+        <category>HackerOne</category>
+        
+        <category>coup de gueule</category>
+        
+        <category>ful-disclosure</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Comment j&apos;ai pu gagner un accès administrateur sur un serveur Windows 2012 grâce à Google</title>
+        <description>&lt;p&gt;La semaine dernière j’ai effectué un &lt;a href=&quot;https://fr.wikipedia.org/wiki/Test_d&apos;intrusion&quot;&gt;test d’intrusion [0]&lt;/a&gt; pour le compte d’une agence web espagnole (dont je vais taire le nom pour des raisons évidentes). Le client m’avait fixé un délai de 4 jours pour réussir à trouver un moyens pour compromettre la sécurité des sites web de l’agence (pas ceux des clients) hébergés sur son serveur ainsi que ce dernier. Le &lt;a href=&quot;https://fr.wikipedia.org/wiki/Hame%C3%A7onnage&quot;&gt;hameçonnage (ou phishing) [1]&lt;/a&gt; et les attaques par force brute étaient était exclus du cadre (scope) de la mission. Il m’aura fallu à peine un peu plus de trois heures pour être sûr à 90% que j’allais réussir ce test d’intrusion. Ce n’est pas que je suis arrogant ou bien que je suis super bon dans mon travail, non détrompez vous, c’est juste que le client n’est pas très bon dans SON TRAVAIL.&lt;/p&gt;
+
+&lt;p&gt;J’ai commencé par énumérer tous les sites web hébergé sur le serveur en utilisant le moteur de recherche Bing et le script &lt;a href=&quot;https://github.com/laramies/theHarvester&quot;&gt;theHarvester [2]&lt;/a&gt;. En tapant IP:xxx.xxx.xxx.xxx sur le champ de recherche de Bing, où les x représentent l’adresse IP du client, on peut lister tous les sites web qui pointent vers cette même IP (il faut vérifier qu’il s’agit pas d’un CDN). Par exemple, voilà la résultat de la requête avec l’IP du serveur d’example.com&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img src=&quot;/images/posts/2017/bing.png&quot; style=&quot;width:75%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Le résultat de cette recherche je l’ai passé à TheHarvester, j’ai pu ainsi récupérer une dizaine sites web (sous domaines) de sites web hébergés sur la même IP.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ theharvester -d example -b all -l 500
+[+] Emails found:
+------------------
+Anna@example.com
+admin@example.com
+administrator@example.com
+bo@example.com
+dbmaster@example.com
+hello@example.com
+july@example.com
+
+[+] Hosts found in search engines:
+------------------------------------
+[-] Resolving hostnames IPs... 
+93.184.216.34:Www.example.com
+93.184.216.34:www.example.com
+[+] Virtual hosts:
+-----------------
+93.184.216.34	example.com
+93.184.216.34	example
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;J’ai continué ma chasse aux informations en servant uniquement des outils &lt;a href=&quot;https://fr.wikipedia.org/wiki/Renseignement_d&apos;origine_source_ouverte&quot;&gt;OSINT [3]&lt;/a&gt; (enseignement de sources ouvertes), mais je ne vais pas tous les énumérer dans ce billet, je me contenterai d’évoquer les techniques (si on peut parler de technique) et outils qui m’ont permet de mener à bout ma mission. Muni de la liste des noms de domaines qui pointent vers l’adresse IP, j’ai commencé à chercher sur Google tous le fichiers (documents word, pdf, excel, sql, archive zip et rar, sql et surtout fichiers générés automatiquement tels que les .swp. C’est à ce moment que j’ai découvert le fichier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.php.bak&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;En ouvrant le fichier avec mon éditeur de texte, j’ai trouvé l’identifiant et le mot de passe pour se connecter au serveur de la base de données. J’ai copié le nom d’utilisateur et le mot de passe dans le wiki je m’en sert, j’ai testé le mot de passe sur 4 sites web, à chaque fois j’ai réussi à me connecter en tant qu’administrateur ! C’est à ce moment là que j’ai su que j’allais réussir cette mission.&lt;/p&gt;
+
+&lt;p&gt;J’ai continué le test d’intrusion comme je l’avais planifié dès le départ, j’ai fini la phase de reconnaissance, j’ai ensuite scanné les sites web avec des scanners des vulnérabilités ainsi que manuellement, je me suis inscrit sur les sites et j’ai vérifié qu’il n’y avait pas de faille (j’avais constaté qu’ils utilisaient un CMS fait maison, ce qui m’a fait gagné beaucoup de temps dans mes scans).&lt;/p&gt;
+
+&lt;p&gt;Après avoir fini toute la panoplie de tests, je me suis connecté en tant qu’administrateur avec l’identifiant et le mot de passe que j’avais trouvé au début, avec l’aide &lt;a href=&quot;https://portswigger.net/burp/&quot;&gt;burp suite [4]&lt;/a&gt; j’ai essayé de contourner les protections mis en place pour sécuriser l’upload sans succès. J’ai tenté de me connecter via SSH, pas de chance là non plus, seule l’authentification avec clé est autorisée. J’essaie alors de me connecter au serveur FTP et là bingo !&lt;/p&gt;
+
+&lt;p&gt;Je génère un backdoor avec l’excellent webshell &lt;a href=&quot;https://github.com/b374k/b374k&quot;&gt;b374k [5]&lt;/a&gt; et je l’upload. Une fois connecté à mon webshell, la première chose que j’ai fait c’est d’essayer de me connecter au serveur mysql avec le mot de passe que j’ai trouvé au début, là aussi BINGO ! Une trentaine de base données qui contiennent au total les informations (nom et prénom, email, adresse, numéro de téléphone, mots de passe…) de plus de deux millions clients ! (btw, je crois que j’ai oublié de vous dire que d’après les informations affichées dans le panneau d’administration de deux sites du client, ce dernier totalisait un CA de plus de 19 millions d’euros en 2017.).&lt;/p&gt;
+
+&lt;p&gt;Je pouvais m’arrêter là et rédiger mon rapport et l’envoyer au client, l’objectif principal de ce test d’intrusion était de voir si c’était possible ou pas de récupérer les données des clients. Mais pourquoi s’arrêter là alors que le fun ne fait que commencer :-).&lt;/p&gt;
+
+&lt;p&gt;J’avais 3 informations que j’avais collecté dans les premières phases du pentest dans ma possession :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Je savais que le serveur tournait sur un Windows server 2012;&lt;/li&gt;
+  &lt;li&gt;Un port &lt;a href=&quot;https://fr.wikipedia.org/wiki/Remote_Desktop_Protocol&quot;&gt;rdp [6]&lt;/a&gt; était ouvert;&lt;/li&gt;
+  &lt;li&gt;Un serveur SSH (copSSH) est installé sur la machine mais qui n’autorise que les connexions par clé.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Je vais dans l’onglet &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Terminal&lt;/code&gt; de b374k et je crée un nouveau utilisateur&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net user toor MdP3240 /add
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Je me connecte en utilisant &lt;a href=&quot;http://www.rdesktop.org/&quot;&gt;rdesktop [7]&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rdesktop -u toor adresse_ip_du_serveur
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;re re bingo !&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img src=&quot;/images/posts/2017/rdesktop.png&quot; style=&quot;width:75%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;J’ouvre le gestionnaire de fichier de Windows et je me déplace au dossier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\Program Files (x86)\copSSH\home\root\.ssh&lt;/code&gt;, j’éditais le fichier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;authorized_keys&lt;/code&gt; pour y ajouter ma clé publique. Je pouvais maintenant accéder au serveur de 3 différentes manières.&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img src=&quot;/images/posts/2017/ssh.png&quot; style=&quot;width:75%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Avant de supprimer l’utilisateur pour ne pas alerter l’administrateur du serveur qui aurait pu se connecter le matin en rentrant le matin et découvrir ce que je faisais, j’ai installé &lt;a href=&quot;https://github.com/gentilkiwi/mimikatz&quot;&gt;Mimikatz [8]&lt;/a&gt; et récupérer quelques hashs. En utilisant &lt;a href=&quot;https://crowd42.github.io/blog/generer-un-dectionnaire/&quot;&gt;CeWl et John The Ripper [9]&lt;/a&gt; ainsi que quelques mots de passe qui était sauvegardés en clair les bases de données, j’ai pu enfin obtenir le mot de passe compte root de la machine \o/.&lt;/p&gt;
+
+&lt;p&gt;Quand j’en ai parlé avec le client pour lui annoncer les résultats du test d’intrusion (je fais souvent ça avant d’envoyer le rapport), il m’a avoué qu’il était persuadé que j’allais échouais, tellement il avait confiance dans “les mesures de sécurités” qu’il avait mis en place. Mais les deux erreurs qu’il a commis, ont été fatales pour lui : la sauvegarde du fichier de configuration non supprimée et l’utilisation du même mot de passe pour l’authentification dans plusieurs sites web et services.&lt;/p&gt;
+
+&lt;p&gt;J’espère que vous avez retenu la leçon derrière ce billet :-).&lt;/p&gt;
+
+&lt;h3 id=&quot;liens&quot;&gt;Liens&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[0]: https://fr.wikipedia.org/wiki/Test_d&apos;intrusion
+[1]: https://fr.wikipedia.org/wiki/Hame%C3%A7onnage
+[2]: https://github.com/laramies/theHarvester
+[3]: https://fr.wikipedia.org/wiki/Renseignement_d&apos;origine_source_ouverte
+[4]: https://portswigger.net/burp/
+[5]: https://github.com/b374k/b374k
+[6]: https://fr.wikipedia.org/wiki/Remote_Desktop_Protocol
+[7]: http://www.rdesktop.org/
+[8]: https://github.com/gentilkiwi/mimikatz
+[9]: /blog/generer-un-dectionnaire/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 27 Dec 2017 11:15:40 +0000</pubDate>
+        <link>http://localhost:4000/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/</link>
+        <guid isPermaLink="true">http://localhost:4000/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/</guid>
+        
+        <category>pentest</category>
+        
+        <category>infosec</category>
+        
+        <category>test d&apos;intrusion</category>
+        
+        <category>penetration testing</category>
+        
+        <category>Windows</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>GG Microsft !</title>
+        <description>&lt;p&gt;On me demande assez souvent pourquoi je n’utilise pas Windows comme le reste des communs des mortels, et quand on le fait je me lance dans des discours sur le le logiciel libre et des exposés avec arguments techniques à l’appui pour montrer à quel point GNU/Linux est bien supérieur au système d’exploitation de Microsft. Cela dit, je dois avouer que j’ai rarement convaincu mes interlocuteurs. Mais tout ça va changer je crois, grace à l’argument qui tue que j’ai découvert ce matin en lisant mes &lt;a href=&quot;/feed&quot;&gt;flux RSS [0]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Tout à commencer il y a plus d’un an, 16 mois pour être précis, quand Tavis Ormandy, le fameux chercheur en sécurité informatique au sein du &lt;a href=&quot;http://googleprojectzero.blogspot.com&quot;&gt;Google Project Zero [1]&lt;/a&gt;, a découvert une vulnérabilité très critique dans le gestionnaire des mots de passe Keeper. Cette faille permettait à des sites peu scrupuleux de voler les mots de passe via des techniques comme le &lt;a href=&quot;https://fr.wikipedia.org/wiki/D%C3%A9tournement_de_clic&quot;&gt;clickjacking [2]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Jusqu’à la rien d’anormal, des bugs et failles dans des logiciels on en voit tous les jours. Mais c’était sans compter sur le génie de Microsft. En effet, le même Travis Ormandy a découvert que l’entreprise a embarqué Keeper dans les récentes versions de Windows 10 !&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;“I recently created a fresh Windows 10 VM with a pristine image from MSDN, and found that a password manager called “Keeper” is now installed by default,”
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Pas de bol pour Microsft, la version de Keeper pré-installée dans Windows contient la même vulnérabilité que Travis avait découvert il y a 16 mois. Certains &lt;del&gt;trolls&lt;/del&gt; pro-windows vont peut-être dire que ce n’est pas de la faute de Microsft et qu’elle n’est pas l’éditrice du logiciel en question; Pardon mais Microsoft n’est pas un petit geek dans sa chambre qui maintient une distro GNU/Linux, c’est une multinationale avec un budget de plusieurs milliards de dollars, elle pourrait quand même effectuer un audit de sécurité d’un logiciel venant d’une source tiers avant de l’inclure par défaut dans son système d’exploitation, ce n’est pas difficile non ?&lt;/p&gt;
+
+&lt;p&gt;Travis Ormandy a remonté la faille aux développeurs de Kepper qui l’ont corrigé en 24 heures, &lt;a href=&quot;https://bugs.chromium.org/p/project-zero/issues/detail?id=1481&amp;amp;desc=3&quot;&gt;il avait donné un délai de 90 jours avant de rendre les détails du rapport de la faille publique [3]&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I assume this is some bundling deal with Microsoft. I&apos;ve heard of Keeper, I remember filing a bug a while ago about how they were injecting privileged UI into pages (   issue 917   ). I checked and, they&apos;re doing the same thing again with this version. I think I&apos;m being generous considering this a new issue that qualifies for a ninety day disclosure, as I literally just changed the selectors and the same attack works.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Il a de même partagé un proof of concept où l’on voit qu’il a réussi à choper le mot de passe Twitter.&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img src=&quot;/images/posts/2017/windows_keeper.png&quot; style=&quot;width:75%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Donc pour revenir à mon argument, je ne sais pas pour vous  mais moi je ne ferais pas confiance à une entreprise incapable de faire un code review d’une putaine extension pour navigateur web ! (bon, je sais que les genre n’ont rien à foutre de ça, mais je vais quand même à rêver dans mon coin )&lt;/p&gt;
+
+&lt;h3 id=&quot;liens&quot;&gt;Liens&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[0]: /feed
+[1]: http://googleprojectzero.blogspot.com
+[2]: https://fr.wikipedia.org/wiki/D%C3%A9tournement_de_clic
+[3]: https://bugs.chromium.org/p/project-zero/issues/detail?id=1481&amp;amp;desc=3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 21 Dec 2017 10:45:20 +0000</pubDate>
+        <link>http://localhost:4000/blog/gg-microsft/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/gg-microsft/</guid>
+        
+        <category>news</category>
+        
+        <category>wtf</category>
+        
+        <category>microsft</category>
+        
+        <category>windows</category>
+        
+        <category>keeper</category>
+        
+        <category>infosec</category>
+        
+        <category>coup de gueule</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Livre : Breaking into information security: learning the ropes 101</title>
+        <description>&lt;p&gt;Durant le dernier &lt;a href=&quot;https://mastodon.social/@crowd42&quot;&gt;Black Friday [0]&lt;/a&gt; quelqu’un avait posté sur &lt;a href=&quot;https://fr.wikipedia.org/wiki/Black_Friday&quot;&gt;Mastodon [1]&lt;/a&gt; une liste d’offres en relation avec la sécurité informatique, dans le lot y avait des réductions sur des cours, des labs, des logiciels, etc. Et il y avait aussi deux livres que leurs auteurs et éditeur Leanpub ont décidé d’offrir gratuitement, il s’agissait de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Programming Linux Anti-Reversing Techniques&lt;/code&gt; et &lt;a href=&quot;https://leanpub.com/ltr101-breaking-into-infosec&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Breaking into information security: learning the ropes 101&lt;/code&gt; [2]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le premier je ne l’ai pas encore commencé, par contre le deuxième je l’ai terminé en un peu plus d’un heure. Il faut dire qu’il fait à peine 95 pages. Donc vous l’aurez compris je crois, n’attendez pas à ce que le livre aille dans tout les détails. Par contre si vous un novice qui s’intéresse à la sécurité informatique soit pour en faire son métier ou juste par passion et curiosité, dans ce cas ce bouquin est peut-être une excellente entrée dans la matière. En effet, au lieu de perdre le lecteur dans des termes, notions et sujets qu’il ne connait peut-être pas, l’auteur se contente dans chaque chapitre de faire un gros résumé du thème et laisse au lecteur le soin d’aller approfondir la thématique abordée.&lt;/p&gt;
+
+&lt;p&gt;Bon, je ne vais pas vous mentir, je n’ai rien appris en lisant ce livre (en fait si, j’ai découvert grâce à lui un excellent livre que j’ai pas encore terminé : &lt;a href=&quot;https://www.amazon.com/Network-Security-Assessment-Know-Your/dp/149191095X&quot;&gt;Network Security Assessment: Know Your Network [3]&lt;/a&gt;) mais je m’y attendais quand même, ni le titre ni le nombre des pages présager le contraire.&lt;/p&gt;
+
+&lt;p&gt;L’éditeur du livre m’a envoyé il y a quelques jours un email pour m’informer que je pouvais partager un lien pour le télécharger (valide jusqu’à la fin de l’année), si ça vous intéresse donc, vous pouvez trouver &lt;a href=&quot;http://leanpub.com/s/6ZEtuxXD-XFwNJ7tMbei5w.pdf&quot;&gt;la version PDF ici [4]&lt;/a&gt;, &lt;a href=&quot;http://leanpub.com/s/6ZEtuxXD-XFwNJ7tMbei5w.epub&quot;&gt;celle de l’epub ici [5]&lt;/a&gt; et &lt;a href=&quot;http://leanpub.com/s/6ZEtuxXD-XFwNJ7tMbei5w.mobi&quot;&gt;pour la mobi c’est ici [6]&lt;/a&gt; :-)&lt;/p&gt;
+
+&lt;h3 id=&quot;liens&quot;&gt;Liens&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[0]: https://mastodon.social/@crowd42
+[1]: https://fr.wikipedia.org/wiki/Black_Friday
+[2]: https://leanpub.com/ltr101-breaking-into-infosec
+[3]: https://www.amazon.com/Network-Security-Assessment-Know-Your/dp/149191095X
+[4]: http://leanpub.com/s/6ZEtuxXD-XFwNJ7tMbei5w.pdf
+[5]: http://leanpub.com/s/6ZEtuxXD-XFwNJ7tMbei5w.epub
+[6]: http://leanpub.com/s/6ZEtuxXD-XFwNJ7tMbei5w.mobi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 08 Dec 2017 11:08:00 +0000</pubDate>
+        <link>http://localhost:4000/books/livre-breaking-into-information-secutiy/</link>
+        <guid isPermaLink="true">http://localhost:4000/books/livre-breaking-into-information-secutiy/</guid>
+        
+        <category>livre</category>
+        
+        <category>ebook</category>
+        
+        <category>infosec</category>
+        
+        <category>epub</category>
+        
+        <category>mobi</category>
+        
+        
+        <category>books</category>
+        
+      </item>
+    
+      <item>
+        <title>Comment ajouter une pagination à votre site Jekyll</title>
+        <description>&lt;p&gt;Comme des millions de gens, j’avais utilisé Wordpress pendant des années pour publier mon blog et tant que j’avais du temps à lui consacrer, tout aller bien. Cependant dès que l’IRL me forçait à rester des déconnecter pendant plus d’une semaine, je commençais à flipper et à se demander si y avait pas une nouvelle faille a été découverte dans un plugin pendant mon absence, et que mon site s’est fait pown par un script kiddie, bien que j’avais automatisé pas mal de chose (dont les mises à jours) pour prévenir ça. D’ailleurs, c’est une des principales raisons qui m’ont poussé à abandonner mon ancien blog &lt;a href=&quot;https://web.archive.org/web/*/www.crowd42.info&quot;&gt;crowd42.info [0]&lt;/a&gt; dès que j’ai senti ça devenait ingérable avec l’emploi de temps de mon ancien boulot.&lt;/p&gt;
+
+&lt;p&gt;Puis il y a quelques mois j’ai découvert &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll [1]&lt;/a&gt;, je ne vous dis pas combien j’ai regretté de ne pas l’avoir fait plus tôt. Après avoir passé deux heures à piocher sa documentation et quelques tutoriels en ligne et j’avais déjà un site/blog qui tourne parfaitement en locale sur ma machine. La suite vous l’avez sous les yeux :-), un blog statique, plus de soucis à se faire quant à sa sécurité, des performances bien supérieures Wordpress.&lt;/p&gt;
+
+&lt;p&gt;Quelques mois plus tard, quand le nombre d’articles affiché dans la partie blog du site devenait important. J’ai cherché dans la documentation officielle s’il était possible d’implémenter la pagination (je n’y avais pas pensé au départ quand j’ai mis en place le site), quelques étaient suffisantes pour trouver la solution. Tout ce que j’avais à faire c’est :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Déplacer le fichier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blog.md&lt;/code&gt; dans un répertoire &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blog&lt;/code&gt; que j’ai créé et de le renommer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt;;&lt;/li&gt;
+  &lt;li&gt;Modifier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blog/index.html&lt;/code&gt; pour qu’il ressemble à ceci :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-jinja&quot; data-lang=&quot;jinja&quot;&gt; &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;paginator.posts&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-date&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;post.date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;| &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;%b %d, %Y&quot;&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+      ::
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;post-link&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;post.url&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;post.title&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+      @ {
+      &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;assign&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;post.tags&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;| &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+      &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;category&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;site.baseurl&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/category/#&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;category&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;reserved&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;category&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;forloop.last&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;,&lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;endif&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;endfor&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+      &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;assign&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+      }
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;endfor&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+!-- Pagination links --&amp;gt;
+  &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;paginator.previous_page&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;paginator.previous_page_path&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;previous&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Page précédente&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;previous&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Page précédente&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;endif&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;page_number &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Page: &lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;paginator.page&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt; sur &lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;paginator.total_pages&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;paginator.next_page&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;paginator.next_page_path&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Page suivante&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;next &quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Page suivante&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;cp&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;endif&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%}&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ajouter les deux lignes suivantes dans le fichier _config.yml&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  paginate: 20
+  paginate_path: &quot;/blog/page:num/&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Pour que ça fonctionne en local, on doit ajouter le plugin jekyll-paginate dans notre fichier Gemfile et de lancer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  gem &apos;jekyll-paginate&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Quelques explications le premier bloc du code ci-dessus (celui entre for post in paginator.post et endof) est une boucle for qui va afficher TOUT les articles de notre site, toute catégorie confondue (par exemple sur le mien : blog, movies, trucs et astuces, books…). C’est un des défauts de jekyll-paginotor, il ne permet pas d’exécuter une boucle sur certaines catégories seulement, par exemple &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;for post in site.catégories.blog&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le deuxième bloc quant à lui permet d’afficher une barre pour naviguer entre les pages:
+    ~~~
+    Page précédente Page: 1 sur 2 Page suivante
+    ~~~&lt;/p&gt;
+
+&lt;p&gt;Et voila , facile non ? :-)&lt;/p&gt;
+
+&lt;p&gt;P.S : Il existe un plugin qui supporte la pagination sur les catégries, malheureusement il n’est pas supporté par Github, donc à moins que vous ne faites tourner jekyll sur votre serveur perso vous pouvez l’oublier.&lt;/p&gt;
+
+&lt;h3 id=&quot;liens&quot;&gt;Liens&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[0]: https://web.archive.org/web/*/www.crowd42.info
+[1]: https://jekyllrb.com/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sat, 11 Nov 2017 21:20:11 +0000</pubDate>
+        <link>http://localhost:4000/blog/astuce/ajouter-pagination-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/astuce/ajouter-pagination-jekyll/</guid>
+        
+        <category>Jekyll</category>
+        
+        <category>pagination</category>
+        
+        <category>liquid</category>
+        
+        <category>astuce</category>
+        
+        
+        <category>blog</category>
+        
+        <category>astuce</category>
+        
+      </item>
+    
+  </channel>
+</rss>

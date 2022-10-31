@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Générer un dictionnaire de mots de passe | crowd42's blog</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="feed/"> 
+
+</head>
+
+
+    <body>
+      <div class="container">
+
+        <header class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1 class="">crowd42's blog</h1>
+    <p>
+    <span class="reserved">char</span> nick[<span class="number">7</span>] = <span class="string">"crowd42"</span>;
+    </p>
+    <p>
+    printf(<a href="https://github.com/crowd42" target="_blank"><span class="string">"https://github.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://mastodon.social/crowd42"
+      target="_blank"><span class="string">"https://mastodon.social/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<a href="https://keybase.io/crowd42"
+      target="_blank"><span class="string">"https://keybase.io/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+
+     <p>
+    printf(<a href="https://twitter.com/crowd42"
+      target="_blank"><span class="string">"https://twitter.com/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+
+    <p>
+    printf(<span class="string">"<span class="reserved">%s\x40</span>riseup<span class="reserved">\x2e\\\b</span>net<span class="reserved">\n</span>"</span>,nick);
+    </p>
+    <!-- <p>
+            printf(<a href="https://crowd42.github.io" target="_blank"><span class="string">"https://<span class="reserved">%s</span>.github.io<span class="reserved">\n</span>"</span></a>,nick);
+        </p> -->
+    <p>
+    puts(<a href="misc/pubkey.gpg.txt" target="_blank"><span
+        class="string">"0xdc 5a6d b445 976d 60"</span></a>);
+    </p>
+  </div>
+</header>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="menu">
+      <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/blog/">blog</a></li>
+          <li> <a href="/astuces/">astuces</a></li>
+          <li><a href="/books/">books</a></li>
+          <li><a href="/casts">*casts</a></li>
+          <li><a href="/movies">movies</a></li>
+          <li><a href="/talks">talks</a></li>
+          <li><a href="/zines">*zines</a></li>
+          <li><a href="/ressources">ressources</a></li>
+          <li><a href="/feed">feed</a></li>
+          <li><a href="https://liberapay.com/~29921/donate">donate</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <main>
+            <div class="post">
+
+  <header class="post-header">
+    <h1>Générer un dictionnaire de mots de passe</h1>
+  </header>
+
+  <article class="post-content">
+  <div class="post">
+
+  <header class="post-header">
+    <p class="meta">
+        Nov 27, 2016
+        
+        
+        •
+        <span><a href="/category/#infosec" class="reserved">infosec</a>,</span><span><a href="/category/#penetration testing" class="reserved">penetration testing</a>,</span><span><a href="/category/#hacking" class="reserved">hacking</a></span>
+    </p>
+  </header>
+
+  <article class="post-content">
+  <h2 id="introduction">Introduction</h2>
+
+<p>Lorsqu’un pentester réussi à s’introduire dans le système informatique de sa
+cible, une de ses premieres actions serait de trouver un moyens d’élever ses
+privilèges (privileges escalations), par exemple de passer d’un compte de simple
+utilisateur à celui d’administrateur. Le moyen le plus “simple” serait que le
+pentester récupère les hashs de mots de passe (on va partir de l’idée que les
+dev n’ont pas fait la boulette de stocker les mdp en plain text).</p>
+
+<p>Un script kiddie, une fois qu’il a les hashs va surement fait chauffer son
+CPU/GPU en lançant John The Ripper ou oclHashcat (paramètres par défaut bien
+évidemment, car il n’était pas foutu de lire la doc) avec une liste de mots de passe
+comme <code class="language-plaintext highlighter-rouge">rockyou.txt</code>, après plusieurs heurs et de Wuts d’électricité gaspillé pour
+rien, il laissera tomber et passera à autre chose.</p>
+
+<p>Un bon pentester par contre aurait procédé différemment. Au lieu de s’attaquer
+directement au cassage des mots de passe avec un dictionnaire comme rockyou, il
+aurait généré un dico spécialement pour la cible à partir de son site web par
+exemple, il aurait généré un dico spécialement pour la cible à partir de son
+site web par exemple. Un des tools que j’utilise personnellement c’est CeWl,
+     prononcé <code class="language-plaintext highlighter-rouge">cool</code> <a href="https://github.com/digininja/CeWL/">lien pour télécharger [0]</a></p>
+
+<h3 id="quest-ce-que-cest-cewl-">Qu’est-ce que c’est CeWl ?</h3>
+
+<p>CeWL (Custom Wordlist Generator) est générateur de dico qui a été conçu pour
+parcourir un site web et de collecter des mots clés et de les compiler dans une
+liste.</p>
+
+<p>CeWL dispose de plusieurs paramètres qui le rendent encore plus puissant, on
+peut par exemple le nombre de lien à suivre, le nombre de caractères dans chaque
+mot, inclure les adresses email et plus encore. Prenons l’exemple suivant.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cewl http://www.example.com -d 1 -m 6 -w dicto.txt
+</code></pre></div></div>
+
+<p>Tout d’abord on indique à CeWL l’url du site, ensuite le nombre de lien à suivre
+(-d). Le nombre minimum de caractères dans chaque mot qu’on va ajouter à notre
+dico est 6 (d’ailleurs faut qu’un jour qu’on m’explique pourquoi une bonne
+        partie des sites web continuent à des mot de passe aussi faibles). Enfin
+le dernier paramètre permet comme vous en doutez de spécifier un fichier ou
+l’output de notre commande sera sauvegardé.</p>
+
+<p>Pour connaitre le nombre de mots de passe généré par CeWL, il suffit d’exécuter
+cette ligne de commande :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wc -l dicto.txt
+1337 dico.txt
+</code></pre></div></div>
+
+<h3 id="faites-entrer-john-the-ripper">Faites entrer John The Ripper</h3>
+
+<p>Grâce à CeWL on a réussi à compiler une liste de mots clés que notre cible
+aurait pu utiliser pour ses mots de passe, mais avec eux uniquement on ira pas
+loin. C’est là qu’entre en jeu JTR. John tire en grosse partie sa puissance des
+régles que l’on peut appliquer à nos wordlists, on peut voir ces règles; les
+éditer, en ajouter via le fichier de conf <code class="language-plaintext highlighter-rouge">/etc/john/john.conf</code> dans la rubrique
+<code class="language-plaintext highlighter-rouge"># Wordlist mode rules</code>. Vous pouvez en apprendre plus sur les règles de JTR et
+de leurs syntaxe en se rendant sur <a href="http://www.openwall.com/john/doc/RULES.shtml">cette page [1]</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Wordlist mode rules
+[List.Rules:Wordlist]
+# Try words as they are
+# Lowercase every pure alphanumeric word
+-c &gt;3 !?X l Q
+# Capitalize every pure alphanumeric word
+-c (?a &gt;2 !?X c Q
+# Lowercase and pluralize pure alphabetic words
+&lt;* &gt;2 !?A l p
+# Lowercase pure alphabetic words and append '1'
+&lt;* &gt;2 !?A l $1
+# Capitalize pure alphabetic words and append '1'
+-c &lt;* &gt;2 !?A c $1
+# Duplicate reasonably short pure alphabetic words (fred -&gt; fredfred)
+&lt;7 &gt;1 !?A l d
+# Lowercase and reverse pure alphabetic words
+&gt;3 !?A l M r Q
+# Prefix pure alphabetic words with '1'
+&gt;2 !?A l ^1
+</code></pre></div></div>
+
+<p>On peut par exemple ajouter cette régle qui va nous permettre d’ajouter quatre
+chiffres à la fin des mots de passe :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Ajoute quatre chiffres à la fin de chaque mot de passe
+$[0-9]$[0-9]$[0-9]$[0-9]
+</code></pre></div></div>
+
+<p>Comme vous l’avez sans doute deviné, cette ligne va nous aidez avec les mots de
+passe du genre “mdp2016”, “mdp1980”…
+On peut maintenant exécuter John pour appliquer ces régles à notre liste de mots
+de passe générée par CeWL :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>john --wordlist=dico.txt --rules --stdout &gt; nouveau-dico.txt
+</code></pre></div></div>
+
+<p>Pour voir la différence, tapons de nouveau dans un terminal notre commande tout
+à l’heure :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wc -l nouveau_dico.txt
+212564 nouveau_dico.txt
+</code></pre></div></div>
+
+<p>Bon Cassage ;-)</p>
+
+<h2 id="liens">Liens</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0]: https://github.com/digininja/CeWL/
+[1]: http://www.openwall.com/john/doc/RULES.shtml 
+</code></pre></div></div>
+
+
+  </article>
+   
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <h1>Sur le même sujet</h1>
+                <ul>
+                
+                <li>
+                    <a href="http://localhost:4000/blog/microsoft-mots-de-passe-toute-une-histoire/">Microsoft et les mots de passe, toute une histoire
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/-blog/script-python-sites-web-meme-adresse-ip/">Un petit script pour récupérer les URLs des sites web hébergés sur la même adresse IP
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/windows-credential-guard-mimikatz/">Windows Credential Guard et Mimikatz
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/meltdown-spectre/">Deux points qui me tracassent à propos de meltdown et spectre
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/blog/full-disclosure-etihad-airways/">Full Disclosure : Des emails et mots de passe de la compagnie aérienne Etihad Airways dans l'air
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+                
+                <li>
+                    <a href="http://localhost:4000/comment-jai-pu-gagner-acces-administrateur-serveur-windows-grace-google/">Comment j'ai pu gagner un accès administrateur sur un serveur Windows 2012 grâce à Google
+                    
+                    </a>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+
+	<p class="feed-recomendation">
+		Si vous avez aimé ce billet, vous pouvez vous inscrire au <a href="feed/">flux RSS</a> !
+	</p>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'crowd42s-blog-1';
+    var disqus_config = function () {
+        this.page.identifier = "/blog/generer-un-dectionnaire/";
+    };
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+  </article>
+
+</div>
+
+            </main>
+          </div>
+        </div>
+
+        <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <footer>
+      Propulsé fièrement par Jekyll!
+    </footer>
+  </div>
+</div>
+
+
+      </div>
+    </body>
+</html>
