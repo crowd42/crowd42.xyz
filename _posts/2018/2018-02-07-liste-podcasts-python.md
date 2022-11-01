@@ -44,7 +44,7 @@ J'ai exclu un podcast (The python experience) de cette liste car il est semble q
 
 ### Liens
 ~~~
-0]: https://talkpython.fm/episodes/rss
+[0]: https://talkpython.fm/episodes/rss
 [1]: https://gpodder.net/podcast/talk-python-to-me-python-conversations-for-passionate-developers-3 
 [2]: http://feeds.soundcloud.com/users/soundcloud:users:82237854/sounds.rss
 [3]: https://www.kennethreitz.org/import-this/
